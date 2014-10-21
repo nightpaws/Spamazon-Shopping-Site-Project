@@ -16,7 +16,7 @@ Thomas Maxwell		-	gvb12182@uni.strath.ac.uk
 
 Stewart Key			-
 
-Aidan O'Grady		-
+Aidan O'Grady		- wlb12153@uni.strath.ac.uk
 
 ###License###
 

@@ -12,7 +12,7 @@ We have decided to create a Webstore, for our project.
 
 Craig Morrison		-
 
-Thomas Maxwell		-	gvb12182@uni.strath.ac.uk
+Thomas Maxwell		- gvb12182@uni.strath.ac.uk
 
 Stewart Key			-
 

@@ -14,7 +14,7 @@ Craig Morrison		-
 
 Thomas Maxwell		- gvb12182@uni.strath.ac.uk
 
-Stewart Key			-
+Stewart Key			- ypb12171@uni.strath.ac.uk (stewart.key.2013@uni.strath.ac.uk)
 
 Aidan O'Grady		- wlb12153@uni.strath.ac.uk
 

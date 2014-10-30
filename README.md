@@ -10,7 +10,7 @@ We have decided to create a Webstore, for our project.
 
 ###Authors###
 
-Craig Morrison		-
+Craig Morrison		- hwb12179@uni.strath.ac.uk
 
 Thomas Maxwell		- gvb12182@uni.strath.ac.uk
 

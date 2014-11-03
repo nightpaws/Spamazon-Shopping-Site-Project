@@ -1,0 +1,260 @@
+/*
+ * StyleSheet for spamazon
+ *
+ *
+ * This should be responsive
+ *
+ *
+ * Authors:
+ *		Thomas Maxwell
+ *		Add your name as you add stuff
+ */
+/*******************************************************************************
+	Global Vars
+*******************************************************************************/
+/*******************************************************************************
+	General Stuff
+*******************************************************************************/
+body {
+  font-family: "Open sans", sans-serif; }
+
+.desktop {
+  display: block; }
+
+.mobile {
+  display: none; }
+
+@media screen and (max-width: 40rem) {
+  .desktop {
+    display: none; }
+
+  .mobile {
+    display: block; } }
+/*******************************************************************************
+	Typography
+*******************************************************************************/
+a {
+  text-decoration: none; }
+
+nav {
+  font-size: 1.5rem; }
+  nav a {
+    color: white; }
+  nav .current {
+    color: #2262ad; }
+
+/*******************************************************************************
+	Header
+*******************************************************************************/
+/* The minus 1% is important, due to the li elements having borders. Exclude it
+ * and things get messy quickly. This isn't the best solution, but its quick and 
+ * easy
+ */
+/******************************
+ Vars
+ *****************************/
+/*****************************************************************************/
+header {
+  width: 100%; }
+  header img {
+    margin: 10px 0 10px 5rem;
+    height: 60px; }
+  header form {
+    float: right;
+    margin: 22px 5rem; }
+  header input, header button {
+    font-size: 20px;
+    border: 1px solid #7B7B7B; }
+  header input {
+    height: 32px;
+    width: 300px; }
+  header button {
+    height: 36px;
+    background: #4c9cf1;
+    color: white;
+    border: none;
+    margin-left: 0.5rem; }
+
+@media screen and (max-width: 56.25rem) {
+  img, form {
+    float: none;
+    margin: auto; } }
+@media screen and (max-width: 40rem) {
+  img, form {
+    display: none; } }
+/******************************
+ Global Menu styles
+ *****************************/
+#nav {
+  clear: both;
+  height: 56px;
+  background-color: #4c9cf1;
+  position: relative;
+  z-index: 1; }
+
+nav {
+  text-align: center; }
+  nav > a {
+    display: none; }
+  nav li {
+    position: relative;
+    background-color: #4c9cf1;
+    border-left: 1px solid #abd0f8;
+    border-right: 1px solid #2262ad; }
+  nav > ul {
+    margin: auto 0; }
+    nav > ul > li {
+      height: 100%;
+      float: left;
+      padding: 1rem 0; }
+    nav > ul > li:hover {
+      background-color: #2262ad; }
+  nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%; }
+    nav li ul li {
+      background-color: #2262ad;
+      padding: 1rem 0;
+      border-top: 1px solid #abd0f8; }
+    nav li ul li:hover {
+      background-color: #4c9cf1; }
+  nav li:hover ul {
+    display: block; }
+
+/******************************
+ Individual Menu styles
+ *****************************/
+#nav-menu > ul > li {
+  width: 17%; }
+#nav-menu li:first-of-type {
+  border-left: none; }
+#nav-menu ul li:first-of-type {
+  border-left: 1px solid #abd0f8; }
+
+#cart-menu > ul > li {
+  width: 10%; }
+
+#user-menu > ul > li {
+  width: 21%;
+  border-right: none; }
+
+/*******************************************************************************
+	Media Queries
+*******************************************************************************/
+@media screen and (max-width: 40rem) {
+  header nav {
+    position: relative; }
+    header nav > ul {
+      height: auto;
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0; }
+      header nav > ul > li {
+        width: 100%;
+        float: none; }
+    header nav li ul {
+      position: static; }
+    header nav a {
+      width: 3rem;
+      height: 3rem;
+      text-indent: -99999px; }
+    header nav .nav-icon {
+      display: block;
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      margin: 10px;
+      background-size: contain;
+      background-position: center; }
+    header nav .menu-icon {
+      top: 0;
+      left: 0;
+      background: url("../img/menu.png"); }
+    header nav .cart-icon {
+      top: 0;
+      right: 56px;
+      background: url("../img/cart.png"); }
+    header nav .user-icon {
+      top: 0;
+      right: 0;
+      background: url("../img/user.png"); }
+  header #nav-menu, header #cart-menu, header #user-menu {
+    width: 56px; }
+  header nav:target > ul {
+    display: block; }
+  header nav:not(:target) > a:first-of-type, header nav:target > a:last-of-type {
+    display: block; } }
+/*******************************************************************************
+	Footer
+*******************************************************************************/
+/* This is that amount of the footer to show when the the page content is not
+ * large enough to remove the footer from the initial view of the page.
+ */
+html, body {
+  position: relative;
+  height: 100%; }
+
+article {
+  padding-bottom: 8.8rem; }
+
+footer {
+  height: 8.8rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+
+footer {
+  border-top: 4px solid #4c9cf1; }
+  footer #footer-links {
+    width: 70%;
+    margin: auto; }
+    footer #footer-links ul {
+      width: 25%;
+      float: left;
+      padding: 1rem 0; }
+      footer #footer-links ul li:first-of-type {
+        color: #2262ad;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem; }
+      footer #footer-links ul li:not(:first-of-type) {
+        margin: 0.4rem 0; }
+        footer #footer-links ul li:not(:first-of-type) a, footer #footer-links ul li:not(:first-of-type) a:visited {
+          color: #333; }
+    footer #footer-links ul:not(:last-of-type) {
+      margin-right: 12.5%; }
+  footer #footer-links-mobile {
+    display: none; }
+  footer .logo {
+    clear: both;
+    margin: 0.5rem auto;
+    display: block;
+    width: 180px; }
+  footer p {
+    text-align: center;
+    margin: 1.5rem 0 0.4rem 0; }
+
+/*******************************************************************************
+	Media Queries
+*******************************************************************************/
+@media screen and (max-width: 50rem) {
+  footer #footer-links {
+    width: 90%; } }
+@media screen and (max-width: 40rem) {
+  footer #footer-links {
+    display: none; }
+  footer #footer-links-mobile {
+    display: initial; }
+    footer #footer-links-mobile li {
+      color: #2262ad;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+      text-align: center; }
+    footer #footer-links-mobile ul {
+      padding: 1rem; }
+    footer #footer-links-mobile a {
+      color: #2262ad; } }

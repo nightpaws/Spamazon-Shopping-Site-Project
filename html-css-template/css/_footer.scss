@@ -1,0 +1,98 @@
+footer {
+
+	border-top: 4px solid $blue;
+
+	#footer-links{
+		width: 70%;
+		margin: auto;
+
+		ul {
+			width: 25%;
+			float: left;
+			padding: 1rem 0;
+
+			li:first-of-type{
+				color: $darkblue;
+				font-weight: bold;
+				font-size: 1.2rem;
+				margin-bottom: 0.6rem;
+			}
+
+			li:not(:first-of-type){
+				
+				margin: 0.4rem 0;
+
+				a, a:visited {
+					color: #333;
+				}
+			}
+		}
+
+		ul:not(:last-of-type){
+			margin-right: 12.5%
+		}
+	}
+
+	#footer-links-mobile{
+		display: none;
+	}
+
+	.logo {
+		clear: both;
+
+		margin: 0.5rem auto;
+		display: block;
+
+		//temp until we get a logo
+		width: 180px;
+	}
+
+	p {
+		text-align: center;
+		margin: 1.5rem 0 0.4rem 0;
+	}
+}
+
+/*******************************************************************************
+	Media Queries
+*******************************************************************************/
+@media screen and (max-width: 50rem){ // 800px
+
+	footer{
+
+		#footer-links{
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 40rem){ // 640px
+
+	footer {
+
+		#footer-links{
+			display: none;
+		}
+
+		#footer-links-mobile{
+
+			display: initial;
+
+			li{
+				color: $darkblue;
+				font-weight: bold;
+				font-size: 1.2rem;
+				margin-bottom: 0.6rem;
+
+				text-align: center;
+			}
+			ul{
+				padding: 1rem;
+			}
+
+			a{
+				color: $darkblue;
+			}
+		}
+	}
+}

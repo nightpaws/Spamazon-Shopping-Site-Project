@@ -1,0 +1,57 @@
+/******************************
+ Vars
+ *****************************/
+
+$nav-height: 56px;
+$mobile-nav-icons-margin: 10px;
+
+ /*****************************************************************************/
+header{
+
+	width: 100%;
+
+	img{
+		margin: 10px 0 10px 5rem;
+		height: 60px;
+	}
+
+	form{
+		float: right;
+		margin: 22px 5rem;
+	}
+
+	input, button{
+		font-size: 20px;
+		border: 1px solid #7B7B7B;
+	}
+
+	input{
+		height: 32px;
+		width: 300px;
+	}
+
+	button{
+		height: 36px;
+		background: $blue;
+		color: white;
+		border: none;
+		margin-left: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 56.25rem){ //900px
+	
+	img, form{
+		float: none;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 40rem){ //640px
+
+	img, form {
+		display: none;
+	}
+}
+
+@import "_nav.scss";

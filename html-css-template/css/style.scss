@@ -1,0 +1,117 @@
+/*
+ * StyleSheet for spamazon
+ *
+ *
+ * This should be responsive
+ *
+ *
+ * Authors:
+ *		Thomas Maxwell
+ *		Add your name as you add stuff
+ */
+
+/*******************************************************************************
+	Global Vars
+*******************************************************************************/
+
+//fonts
+$font-stack1: Helvetica Neue, Helvetica, Arial;
+$font-stack2: 'Open sans', sans-serif;
+
+//color scheme
+$blue: #4C9CF1;
+$lightblue: lighten($blue, 20%); //get actual color code
+$darkblue: #2262AD;
+
+/*******************************************************************************
+	General Stuff
+*******************************************************************************/
+
+body { 
+	font-family: $font-stack2;
+}
+
+//A bunch of stuff to deal with the wonder differences presented by mobile 
+//screens
+.desktop{
+	display: block;
+}
+.mobile{
+	display: none;
+}
+
+@media screen and (max-width: 40rem){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+/*******************************************************************************
+	Typography
+*******************************************************************************/
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	font-size: 1.5rem;
+	a{
+		color: white;
+	}
+	.current{
+		color: $darkblue;
+	}
+}
+
+/*******************************************************************************
+	Header
+*******************************************************************************/
+
+//nav size
+$total: 100%;
+$main-nav-width: 68%;
+$main-nav-li-width: $main-nav-width /4;
+
+$user-nav-width: 21%;
+
+/* The minus 1% is important, due to the li elements having borders. Exclude it
+ * and things get messy quickly. This isn't the best solution, but its quick and 
+ * easy
+ */
+$cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
+
+@import "_header.scss";
+
+/*******************************************************************************
+	Footer
+*******************************************************************************/
+
+/* This is that amount of the footer to show when the the page content is not
+ * large enough to remove the footer from the initial view of the page.
+ */
+$footer-height: 8.8rem;
+
+//first ram the footer down to the bottom of the page
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+article {
+	padding-bottom: $footer-height;
+}
+
+
+footer {
+	height: $footer-height;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+//now style the footer
+@import "_footer.scss";

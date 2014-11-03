@@ -18,6 +18,8 @@ Stewart Key			- ypb12171@uni.strath.ac.uk (stewart.key.2013@uni.strath.ac.uk)
 
 Aidan O'Grady		- wlb12153@uni.strath.ac.uk
 
+Chloe Forsyth   - xeb12185@uni.strath.ac.uk
+
 ###License###
 
 Copyright 2014 

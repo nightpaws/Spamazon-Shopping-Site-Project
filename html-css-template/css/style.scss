@@ -23,6 +23,9 @@ $blue: #4C9CF1;
 $lightblue: lighten($blue, 20%); //get actual color code
 $darkblue: #2262AD;
 
+//mixins
+@import "_mixins.scss";
+
 /*******************************************************************************
 	General Stuff
 *******************************************************************************/
@@ -55,7 +58,11 @@ form {
 		background: $blue;
 		color: white;
 		border: none;
+		@include transition-duration(0.2s);
 	}
+	button:hover, button:focus{
+			background: $darkblue;
+		}
 }
 
 .centre{
@@ -64,18 +71,28 @@ form {
 
 a.a-button{
 	height: 36px;
+	width: 100%;
 	background: $blue;
+	@include transition-duration(0.2s);
 	color: white;
 	font-size: 20px;
 	display: inline-block;
-	padding: 0 1rem;
 	vertical-align: middle;
+	text-align: center;
 
 	span{
 		display: inline-block;
 		height: 36px;
 		// vertical-align: middle;
 	}
+}
+
+a.a-button:visited{
+	color: white;
+}
+
+a.a-button:hover, a.a-button:focus {
+	background: $darkblue;
 }
 
 //A bunch of stuff to deal with the wonder differences presented by mobile 
@@ -100,8 +117,21 @@ a.a-button{
 	Typography
 *******************************************************************************/
 
+h1{
+	font-size: 2.5rem;
+}
+
+h2{
+	font-size: 1.5rem;
+}
+
 a {
 	text-decoration: none;
+	color: $darkblue;
+}
+
+a:visited {
+	color: $lightblue;
 }
 
 nav {
@@ -150,8 +180,9 @@ $footer-height: 8.8rem;
 
 //first ram the footer down to the bottom of the page
 html, body {
-	position: relative;
-	height: 100%;
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
 }
 
 article {

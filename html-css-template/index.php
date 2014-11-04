@@ -11,7 +11,7 @@
 		<?php //here goes all the page content ?>
 	</article>
 	<footer>
-		<?php include('footer.php'); ?>
+		<?php //include('footer.php'); ?>
 	</footer>
 </body>
 </html>

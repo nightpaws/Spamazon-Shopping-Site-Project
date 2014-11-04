@@ -51,10 +51,7 @@
 	    		<a href="#" title="Hide navigation">Hide navigation<span class="nav-icon user-icon"></a>
 				<ul>
 					<li>
-						<a href="#">***USERNAME***</a>
-						<ul>
-							<li><a href="#">Account</a></li>
-						</ul>
+						<a href="login.php">Log in</a>
 					</li>
 				</ul>
 			</nav>

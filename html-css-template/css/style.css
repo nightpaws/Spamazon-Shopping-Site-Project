@@ -18,6 +18,38 @@
 body {
   font-family: "Open sans", sans-serif; }
 
+form input, form button, form label {
+  font-size: 20px; }
+form label {
+  display: inline-block;
+  height: 36px;
+  width: 8rem;
+  margin-right: 3rem; }
+form input {
+  height: 32px;
+  width: 300px;
+  border: 1px solid #7B7B7B; }
+form button {
+  height: 36px;
+  background: #4c9cf1;
+  color: white;
+  border: none; }
+
+.centre {
+  margin: auto; }
+
+a.a-button {
+  height: 36px;
+  background: #4c9cf1;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 1rem;
+  vertical-align: middle; }
+  a.a-button span {
+    display: inline-block;
+    height: 36px; }
+
 .desktop {
   display: block; }
 
@@ -187,6 +219,31 @@ nav {
     display: block; }
   header nav:not(:target) > a:first-of-type, header nav:target > a:last-of-type {
     display: block; } }
+/*******************************************************************************
+	Log in / Register
+*******************************************************************************/
+.log-in {
+  width: 30rem;
+  margin: auto; }
+  .log-in form {
+    margin-top: 5rem; }
+    .log-in form div {
+      margin-top: 0.8rem; }
+    .log-in form button {
+      display: block;
+      width: 7rem;
+      text-align: center;
+      padding: 0 1rem;
+      margin: auto; }
+  .log-in p {
+    margin: auto;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 20px; }
+  .log-in a {
+    margin: auto;
+    margin-top: 0.8rem; }
+
 /*******************************************************************************
 	Footer
 *******************************************************************************/

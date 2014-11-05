@@ -27,122 +27,16 @@ $darkblue: #2262AD;
 @import "_mixins.scss";
 
 /*******************************************************************************
-	General Stuff
+	Global stuff
 *******************************************************************************/
 
-body { 
-	font-family: $font-stack2;
-}
-
-//forms
-form {
-
-	input, button, label{
-		font-size: 20px;
-	}
-
-	label{
-		display: inline-block;
-		height: 36px;
-		width: 8rem;
-		margin-right: 3rem;
-	}
-
-	input{
-		height: 32px;
-		width: 300px;
-		border: 1px solid #7B7B7B;
-	}
-	button{
-		height: 36px;
-		background: $blue;
-		color: white;
-		border: none;
-		@include transition-duration(0.2s);
-	}
-	button:hover, button:focus{
-			background: $darkblue;
-		}
-}
-
-.centre{
-	margin: auto;
-}
-
-a.a-button{
-	height: 36px;
-	width: 100%;
-	background: $blue;
-	@include transition-duration(0.2s);
-	color: white;
-	font-size: 20px;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-
-	span{
-		display: inline-block;
-		height: 36px;
-		// vertical-align: middle;
-	}
-}
-
-a.a-button:visited{
-	color: white;
-}
-
-a.a-button:hover, a.a-button:focus {
-	background: $darkblue;
-}
-
-//A bunch of stuff to deal with the wonder differences presented by mobile 
-//screens
-.desktop{
-	display: block;
-}
-.mobile{
-	display: none;
-}
-
-@media screen and (max-width: 40rem){
-	.desktop{
-		display: none;
-	}
-	.mobile{
-		display: block;
-	}
-}
+@import "_global.scss";
 
 /*******************************************************************************
 	Typography
 *******************************************************************************/
 
-h1{
-	font-size: 2.5rem;
-}
-
-h2{
-	font-size: 1.5rem;
-}
-
-a {
-	text-decoration: none;
-	color: $darkblue;
-}
-
-a:visited {
-	color: $lightblue;
-}
-
-nav {
-	font-size: 1.5rem;
-	a{
-		color: white;
-	}
-	.current{
-		color: $darkblue;
-	}
-}
+@import "_typography.scss";
 
 /*******************************************************************************
 	Header

@@ -1,9 +1,45 @@
+h1.page-header:after, h2.page-subheader:after{
+	content: "";
+	display: block;
+	height: 2px;
+	margin: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	background: $blue;
+}
+
 h1{
+	text-align: center;
+  	margin-top: 2rem;
 	font-size: 2.5rem;
 }
 
+h1.page-header:after{
+	width: 30rem;
+}
+
 h2{
-	font-size: 1.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+	margin: 1.4rem 0;
+}
+
+h2.page-subheader:after{
+	width: 20rem;
+}
+
+h3{
+	text-align: center;
+	font-size: 1.4rem;	
+	margin: 1rem 0 0.5rem 0;
+}
+
+p, li{
+	line-height: 1.6rem;
+}
+
+p{
+	margin: 0.5rem 0;
 }
 
 a {

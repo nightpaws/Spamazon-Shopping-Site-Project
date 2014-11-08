@@ -8,7 +8,7 @@
 				<a href="#nav-menu" title="Show navigation">Show navigation<span class="nav-icon menu-icon"></span></a>
 	    		<a href="#" title="Hide navigation">Hide navigation<span class="nav-icon menu-icon"></a>
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li>
 						<a href="#" aria-haspopup="true">Mens</a>
 						<ul>
@@ -43,7 +43,7 @@
 				<a href="#cart-menu" title="Show navigation">Show navigation<span class="nav-icon cart-icon"></span></a>
 	    		<a href="#" title="Hide navigation">Hide navigation<span class="nav-icon cart-icon"></a>
 				<ul>
-					<li><a href="#">CART</a></li>
+					<li><a href="#">Cart</a></li>
 				</ul>
 			</nav>
 			<nav id="user-menu" role="navigation">

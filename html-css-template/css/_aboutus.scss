@@ -1,0 +1,58 @@
+#about-us{
+
+	#about{
+		h3:after{
+			display: none;
+		}
+
+		li{
+			text-align: center;
+		}
+	}
+
+	h3:after{
+		content: "";
+		display: block;
+		margin: auto;
+		height: 1px;
+		width: 10rem;
+		background: $lightblue;
+	}
+
+	li a{
+		display: block;
+		text-align: center;
+		line-height: 1.6rem;
+	}
+
+	.website:before, .email:before, .twitter:before, .github:before, .linkedin:before{
+		content: "";
+		display: inline-block;
+		height: 1rem;
+		width: 1rem;
+	}
+
+	.website:before{
+		background-image: url('../img/icons/home.svg');
+	}
+
+	.email:before{
+		background-image: url('../img/icons/email.svg');
+	}
+
+	.twitter:before{
+		background-image: url('../img/icons/twitter.svg');
+	}
+
+	.github:before{
+		background-image: url('../img/icons/github.svg');
+	}
+
+	.linkedin:before{
+		background-image: url('../img/icons/linkedin.svg');
+	}
+
+	p{
+		text-align: center;
+	}
+}

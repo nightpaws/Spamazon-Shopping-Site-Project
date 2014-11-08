@@ -16,6 +16,10 @@ footer {
 				font-weight: bold;
 				font-size: 1.2rem;
 				margin-bottom: 0.6rem;
+
+				a:visited{
+					color: $darkblue;
+				}
 			}
 
 			li:not(:first-of-type){

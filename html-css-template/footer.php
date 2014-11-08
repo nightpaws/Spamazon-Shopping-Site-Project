@@ -1,10 +1,10 @@
 		<div id="footer-links">
 			<ul>
-				<li>About Us</li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">People</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Press</a></li>
+				<li><a href="about.php">About Us</a></li>
+				<li><a href="about.php#about">About</a></li>
+				<li><a href="about.php#people">People</a></li>
+				<li><a href="about.php#contact">Contact</a></li>
+				<li><a href="about.php#press">Press</a></li>
 			</ul>
 			<ul>
 				<li>Policies<li>
@@ -23,7 +23,7 @@
 		</div>
 		<div id="footer-links-mobile">
 			<ul>
-				<li><a href="#">About Us</a></li>
+				<li><a href="about.php">About Us</a></li>
 				<li><a href="#">Policies</a></li>
 				<li><a href="#">Shopping Help</a></li>
 			</ul>

@@ -8,7 +8,7 @@
 		<?php include('header.php'); ?>
 	</header>
 	<article id="reg">
-		<h1>Registration</h1>
+		<h1 class="page-header">Registration</h1>
 		<div class="reg">
 			<form name="reg" action="#" method="post">
 				<table>

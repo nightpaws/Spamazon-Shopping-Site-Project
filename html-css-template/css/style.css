@@ -18,6 +18,11 @@
 body {
   font-family: "Open sans", sans-serif; }
 
+.content {
+  width: 960px;
+  margin: auto;
+  margin-bottom: 3rem; }
+
 form input, form button, form label {
   font-size: 20px; }
 form label {
@@ -82,11 +87,41 @@ a.a-button:hover, a.a-button:focus {
 /*******************************************************************************
 	Typography
 *******************************************************************************/
+h1.page-header:after, h2.page-subheader:after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background: #4c9cf1; }
+
 h1 {
+  text-align: center;
+  margin-top: 2rem;
   font-size: 2.5rem; }
 
+h1.page-header:after {
+  width: 30rem; }
+
 h2 {
-  font-size: 1.5rem; }
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 1.4rem 0; }
+
+h2.page-subheader:after {
+  width: 20rem; }
+
+h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 0; }
+
+p, li {
+  line-height: 1.6rem; }
+
+p {
+  margin: 0.5rem 0; }
 
 a {
   text-decoration: none;
@@ -249,6 +284,42 @@ nav {
   header nav:not(:target) > a:first-of-type, header nav:target > a:last-of-type {
     display: block; } }
 /*******************************************************************************
+	About us
+*******************************************************************************/
+#about-us #about h3:after {
+  display: none; }
+#about-us #about li {
+  text-align: center; }
+#about-us h3:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 10rem;
+  background: #abd0f8; }
+#about-us li a {
+  display: block;
+  text-align: center;
+  line-height: 1.6rem; }
+#about-us .website:before, #about-us .email:before, #about-us .twitter:before, #about-us .github:before, #about-us .linkedin:before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem; }
+#about-us .website:before {
+  background-image: url("../img/icons/home.svg"); }
+#about-us .email:before {
+  background-image: url("../img/icons/email.svg"); }
+#about-us .twitter:before {
+  background-image: url("../img/icons/twitter.svg"); }
+#about-us .github:before {
+  background-image: url("../img/icons/github.svg"); }
+#about-us .linkedin:before {
+  background-image: url("../img/icons/linkedin.svg"); }
+#about-us p {
+  text-align: center; }
+
+/*******************************************************************************
 	Log in / Register
 *******************************************************************************/
 h1 {
@@ -285,7 +356,7 @@ h1 {
     text-align: center;
     margin: 1rem 0 0.6rem 0; }
   .reg form {
-    margin-top: 2rem; }
+    margin: 2rem 0 5rem 0; }
     .reg form button {
       width: 100%;
       margin-top: 1rem; }
@@ -327,6 +398,8 @@ footer {
         font-weight: bold;
         font-size: 1.2rem;
         margin-bottom: 0.6rem; }
+        footer #footer-links ul li:first-of-type a:visited {
+          color: #2262ad; }
       footer #footer-links ul li:not(:first-of-type) {
         margin: 0.4rem 0; }
         footer #footer-links ul li:not(:first-of-type) a, footer #footer-links ul li:not(:first-of-type) a:visited {

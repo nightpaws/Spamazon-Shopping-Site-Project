@@ -305,7 +305,8 @@ nav {
   content: "";
   display: inline-block;
   height: 1rem;
-  width: 1rem; }
+  width: 1rem;
+  margin-right: 0.5rem; }
 #about-us .website:before {
   background-image: url("../img/icons/home.svg"); }
 #about-us .email:before {
@@ -363,6 +364,15 @@ h1 {
     .reg form label {
       width: 100%;
       min-width: 14.07rem; }
+
+/*******************************************************************************
+	Error pages
+*******************************************************************************/
+#error #code {
+  font-size: 3rem;
+  margin-top: 5rem; }
+#error ul li {
+  text-align: center; }
 
 /*******************************************************************************
 	Footer

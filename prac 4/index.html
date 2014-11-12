@@ -2,41 +2,29 @@
 	<head>
 		<script language ="javascript">
 			function setTheme(){
-
-				document.write("Doesn't seem to be running this script");
 				var x = document.cookie;
-				document.write(document.cookie);
-				console.log(x);
   				if (x=="theme=css/dark.css") {
 							var ss = document.createElement("link");
 							ss.type = "text/css";
 							ss.rel = "stylesheet";
 							ss.href = "css/dark.css";
 							document.getElementsByTagName("head")[0].appendChild(ss);
-
-					//<link href="css/dark.css" rel="stylesheet" type="text/css" title="dark"/>
-
 				} else {
-											var ss = document.createElement("link");
+							var ss = document.createElement("link");
 							ss.type = "text/css";
 							ss.rel = "stylesheet";
 							ss.href = "css/light.css";
 							document.getElementsByTagName("head")[0].appendChild(ss);
-					//<link href="css/light.css"rel="stylesheet" type="text/css" title="light" />
 				}
 			}
 			setTheme();
 		</script>
 	</head>
 	<body>		
-
-
-
 		<button onclick="setDark()">Night Mode</button>
 		<button onclick="setLight()">Day Mode</button>
-		test
-
 		<script language="javascript">
+		
 			function setDark() {
 				document.cookie="theme=css/dark.css";
 				location.reload();
@@ -46,7 +34,6 @@
 				document.cookie="theme=css/light.css";
 				location.reload();
 			}
-
 
 		</script>
 	</body>

@@ -1,12 +1,13 @@
 body {
-	color: blue;
-	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+	color: #DDDDDD;
+	background-color: #111111;
 }
 h1 {	
-	color: blue;
-	background-color: black;
+	color: #DDDDDD;
+	background-color: #111111;
 }
 p{
-	color: blue;
-	background-color: black;
+	color: #DDDDDD;
+	background-color: #111111;
 }

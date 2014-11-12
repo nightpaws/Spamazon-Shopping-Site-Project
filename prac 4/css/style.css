@@ -1,0 +1,21 @@
+#style-switch{
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+	float: left;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+article{
+	clear:both;
+}

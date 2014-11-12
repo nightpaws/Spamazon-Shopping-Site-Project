@@ -15,6 +15,16 @@ function setTheme(){
 	}
 }
 
+function switchTheme(){
+	var x = document.cookie;
+	if (x=="theme=css/dark.css") {
+		setLight();
+	}
+	else{
+		setDark();
+	}
+}
+
 function setDark() {
 	document.cookie="theme=css/dark.css";
 	location.reload();

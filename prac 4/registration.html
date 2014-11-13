@@ -1,69 +1,56 @@
 <html>
 
 	<head>
-		<title>Practical Four</title>
-		<script language ="javascript">
-			function setTheme(){
-
-				var x = document.cookie;
-  				if (x=="theme=css/dark.css") {
-							var ss = document.createElement("link");
-							ss.type = "text/css";
-							ss.rel = "stylesheet";
-							ss.href = "css/dark.css";
-							document.getElementsByTagName("head")[0].appendChild(ss);
-				} else {
-							var ss = document.createElement("link");
-							ss.type = "text/css";
-							ss.rel = "stylesheet";
-							ss.href = "css/light.css";
-							document.getElementsByTagName("head")[0].appendChild(ss);
-				}
-			}
-			setTheme();
-		</script>
+		<title>Registration | Practical 4</title>
+		
+		<link rel="stylesheet" href="./css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<button onclick="setDark()">Night Mode</button>
-		<button onclick="setLight()">Day Mode</button>
-		<script language="javascript">
-			function setDark() {
-				document.cookie="theme=css/dark.css";
-				location.reload();
-			}
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Registration</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="gettingThere.html">Getting there</a></li>
+					<li><a href="" onclick="switchTheme()">Switch theme</a></li>
+				</ul>
+			</nav>
+		</header>
 
-			function setLight(){
-				document.cookie="theme=css/light.css";
-				location.reload();
-			}
-		</script>
-		<form method="POST" action="registration.php">
-			<table>
-				<b>Thank you for showing interest in our bullshit.</b>
-				<tr>
-					<td><strong>Email:</strong></td>
-					<td><input type="text" name="email" size="30"></td>
-				</tr>
+		<article>
+			<form method="POST" action="registration.php">
+				<table>
+					<b>Thank you for showing interest in our rubbish.</b>
+					<tr>
+						<td><strong>Email:</strong></td>
+						<td><input type="text" name="email" size="30"></td>
+					</tr>
+					
+					<tr>
+						<td><strong>First Name:</strong></td>
+						<td> <input type="text" name="forename" size="30"></td>
+					</tr>
+					
+					<tr>
+						<td><strong>Last Name:</strong></td>
+						<td> <input type="text" name="surname" size="30"></td>
+					</tr>
+
+					<tr>
+						<td><input type="submit" value="Submit" /></td>
+						<td><input type="reset" value="Reset" /></td>
+					</tr>
 				
-				<tr>
-					<td><strong>First Name:</strong></td>
-					<td> <input type="text" name="forename" size="30"></td>
-				</tr>
-				
-				<tr>
-					<td><strong>Last Name:</strong></td>
-					<td> <input type="text" name="surname" size="30"></td>
-				</tr>
-
-
-				<tr>
-					<td><input type="submit" value="Submit" /></td>
-					<td><input type="reset" value="Reset" /></td>
-
-				</tr>
+				</table>
+			</form>
+		</article>
 			
-			</table>
-		</form>
+
 	</body>
+
+	<script type="text/javascript" src="./js/switchTheme.js"></script>
+
 </html>

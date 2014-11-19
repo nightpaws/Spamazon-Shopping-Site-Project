@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+		<title>Registration | Practical 4</title>
+		
+		<link rel="stylesheet" href="./css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="registration.html">Registration</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="gettingThere.html">Getting there</a></li>
+					<li><a href="" onclick="switchTheme()">Switch theme</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<article>
+			<form method="POST" action="registration.php">
+				<table>
+					<b>Thank you for showing interest in our rubbish.</b>
+					<tr>
+						<td><strong>Email:</strong></td>
+						<td><input type="text" name="email" size="30"></td>
+					</tr>
+					
+					<tr>
+						<td><strong>First Name:</strong></td>
+						<td> <input type="text" name="forename" size="30"></td>
+					</tr>
+					
+					<tr>
+						<td><strong>Last Name:</strong></td>
+						<td> <input type="text" name="surname" size="30"></td>
+					</tr>
+
+					<tr>
+						<td><input type="submit" value="Submit" /></td>
+						<td><input type="reset" value="Reset" /></td>
+					</tr>
+				
+				</table>
+			</form>
+		</article>
+			
+
+	</body>
+
+	<script type="text/javascript" src="./js/switchTheme.js"></script>
+
+</html>

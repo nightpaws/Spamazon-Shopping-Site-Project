@@ -1,0 +1,38 @@
+<html>
+	<head onload setTheme()>
+		<script>
+			function setTheme(){
+				document.write("Doesn't seem to be running this script");
+				var x = document.cookie;
+  				if (x=="theme=css/dark.css;") {
+					<link href="css/dark.css" rel="stylesheet" type="text/css" title="dark"/>
+
+				} else {
+					<link href="css/light.css"rel="stylesheet" type="text/css" title="light" />
+				}
+			}
+		</script>
+	</head>
+	<body>		
+
+
+
+		<button onclick="setDark()">Night Mode</button>
+		<button onclick="setLight()">Day Mode</button>
+		test
+
+		<script>
+			function setDark() {
+				document.cookie="theme=css/dark.css";
+				reload();
+			}
+
+			function setLight(){
+				document.cookie="theme=css/light.css";
+				reload();
+			}
+
+
+		</script>
+	</body>
+</html>

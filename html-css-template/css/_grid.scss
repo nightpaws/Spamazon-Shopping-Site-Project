@@ -1,0 +1,72 @@
+//Grid vars
+$padding: 0;
+$margin: 1rem;
+$no_coloumns: 12;
+$coloumn-wdith: 100% / $no_coloumns;
+
+
+.section{
+	width: 100%;
+	clear:both;
+	padding:0;
+	margin-left: $margin * -1;
+}
+
+.col{
+	display: block;
+	float: left;
+	width: auto;
+	@include box-sizing();
+	@include background-clip();
+	padding: 0 $padding;
+	margin: 0 0 $margin 0;
+	border-left: $margin solid transparent;
+}
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+
+.group:after {
+	clear:both;
+}
+
+.s1{
+	width: $coloumn-wdith;
+}
+.s2{
+	width: $coloumn-wdith * 2;
+}
+.s3{
+	width: $coloumn-wdith * 3;
+}
+.s4{
+	width: $coloumn-wdith * 4;
+}
+.s5{
+	width: $coloumn-wdith * 5;
+}
+.s6{
+	width: $coloumn-wdith * 6;
+}
+.s7{
+	width: $coloumn-wdith * 7;
+}
+.s8{
+	width: $coloumn-wdith * 8;
+}
+.s9{
+	width: $coloumn-wdith * 9;
+}
+.s10{
+	width: $coloumn-wdith * 10;
+}
+.s11{
+	width: $coloumn-wdith * 11;
+}
+.s12{
+	width: $coloumn-wdith * 12;
+}
+

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php  	include ('head.php'); ?>
+	<?php  	include ('page-elements/head.php'); ?>
 </head>
 <body>
 	<header>
-		<?php include('header.php'); ?>
+		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article id="about-us" class="content">
 		<h1 class="page-header">About Us</h1>
@@ -85,7 +85,7 @@
 		</div>
 	</article>
 	<footer>
-		<?php include('footer.php'); ?>
+		<?php include('page-elements/footer.php'); ?>
 	</footer>
 </body>
 </html>

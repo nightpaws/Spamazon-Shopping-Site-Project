@@ -4,3 +4,33 @@
 	-ms-transition-duration: $time;
 	transition-duration: $time;
 }
+
+@mixin box-sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin background-clip(){
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+@mixin horizontal-break-line($color, $height){
+	content: "";
+	display: block;
+	width: 95%;
+	height: $height;
+	margin: auto;
+	background: $color;
+}
+
+@mixin vertical-break-line($color, $width, $height){
+	float: left;
+	content: "";
+	display: block;
+	height: $height;
+	width: 1px;
+	background: $lightblue;
+}

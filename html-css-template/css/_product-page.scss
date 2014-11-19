@@ -1,0 +1,72 @@
+
+
+/*******************************************************************************
+	Purchase Section
+*******************************************************************************/
+@import "_purchase.scss";
+
+/*******************************************************************************
+	suggested Items Section
+*******************************************************************************/
+
+.suggested-items:before{
+	@include horizontal-break-line($lightblue, 1px);
+}
+
+.suggested-items{
+
+	h3{
+		text-align: left;
+	}
+	
+	.items{
+
+		white-space: nowrap;
+
+		div {
+			// float: left;
+			display: inline-block;
+		}
+	}
+
+	.items:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+}
+
+/*******************************************************************************
+	Reviews Section
+*******************************************************************************/
+
+.reviews:before{
+	@include horizontal-break-line($lightblue, 1px);
+}
+
+.reviews{
+
+	h3 {
+		text-align: left;
+	}
+
+	.sub-reviews:before{
+		@include vertical-break-line($lightblue, 1px, 500px);
+		margin-right: 0.5rem;
+	}
+
+	.more{
+		width: 100%;
+
+		a{
+			width: 25%;
+			margin-left: 12.5%;
+		}
+
+		a:last-of-type{
+			margin-left: 25%
+		}
+	}
+
+}

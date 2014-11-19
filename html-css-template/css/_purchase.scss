@@ -1,0 +1,77 @@
+.purchase:before{
+	float: left;
+	content: "";
+	display: block;
+	height: 500px;
+	width: 1px;
+	background: $lightblue;
+}
+
+.purchase{
+
+	float: left;
+	margin-top: 1rem;
+
+	form{
+		padding-left: 0.5rem;
+	}
+
+	.select{
+
+		padding: 1rem 0 1.5rem 0;
+
+		li:first-of-type{
+
+			font-size: 1.4rem;
+		}
+
+		button{
+			display: inline-block;
+			margin: 0.5rem 0.5rem;
+			float: left;
+			padding-left: 0.7rem;
+			padding-right: 0.7rem;
+			border: 1px solid $grey;
+			color: black;
+		}
+
+		button:hover{
+			background-color: $lightblue;
+		}
+
+		.selected{
+			background-color: $blue;
+			color: white;
+		}
+	}
+
+	.size-select{
+
+		button{
+			background: white;
+		}
+	}
+
+	.color-select{
+		padding-top: 2.5rem;
+		display: block;
+	}
+
+	label{
+		padding-top: 1rem;
+	}
+
+	select{
+		display: block;
+		clear: both;
+	}
+
+	button[type="submit"]{
+		display: block;
+		clear: both;
+	}
+
+	select, button {
+		margin-left: 0.5rem;
+	}
+}

@@ -23,6 +23,14 @@ body {
   margin: auto;
   margin-bottom: 3rem; }
 
+.l-content {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 3rem; }
+
+.tab {
+  padding-left: 1rem; }
+
 form input, form button, form label {
   font-size: 20px; }
 form label {
@@ -33,7 +41,7 @@ form label {
 form input {
   height: 32px;
   width: 300px;
-  border: 1px solid #7B7B7B; }
+  border: 1px solid #7b7b7b; }
 form button {
   height: 36px;
   background: #4c9cf1;
@@ -84,6 +92,70 @@ a.a-button:hover, a.a-button:focus {
 
   .mobile {
     display: block; } }
+.section {
+  width: 100%;
+  clear: both;
+  padding: 0;
+  margin-left: -1rem; }
+
+.col {
+  display: block;
+  float: left;
+  width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0 0;
+  margin: 0 0 1rem 0;
+  border-left: 1rem solid transparent; }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.s1 {
+  width: 8.33333%; }
+
+.s2 {
+  width: 16.66667%; }
+
+.s3 {
+  width: 25%; }
+
+.s4 {
+  width: 33.33333%; }
+
+.s5 {
+  width: 41.66667%; }
+
+.s6 {
+  width: 50%; }
+
+.s7 {
+  width: 58.33333%; }
+
+.s8 {
+  width: 66.66667%; }
+
+.s9 {
+  width: 75%; }
+
+.s10 {
+  width: 83.33333%; }
+
+.s11 {
+  width: 91.66667%; }
+
+.s12 {
+  width: 100%; }
+
 /*******************************************************************************
 	Typography
 *******************************************************************************/
@@ -117,7 +189,7 @@ h3 {
   font-size: 1.4rem;
   margin: 1rem 0 0.5rem 0; }
 
-p, li {
+p, li, td {
   line-height: 1.6rem; }
 
 p {
@@ -364,6 +436,177 @@ h1 {
     .reg form label {
       width: 100%;
       min-width: 14.07rem; }
+
+/*******************************************************************************
+	Product Page
+*******************************************************************************/
+/*******************************************************************************
+	Purchase Section
+*******************************************************************************/
+.purchase:before {
+  float: left;
+  content: "";
+  display: block;
+  height: 500px;
+  width: 1px;
+  background: #abd0f8; }
+
+.purchase {
+  float: left;
+  margin-top: 1rem; }
+  .purchase form {
+    padding-left: 0.5rem; }
+  .purchase .select {
+    padding: 1rem 0 1.5rem 0; }
+    .purchase .select li:first-of-type {
+      font-size: 1.4rem; }
+    .purchase .select button {
+      display: inline-block;
+      margin: 0.5rem 0.5rem;
+      float: left;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+      border: 1px solid #7b7b7b;
+      color: black; }
+    .purchase .select button:hover {
+      background-color: #abd0f8; }
+    .purchase .select .selected {
+      background-color: #4c9cf1;
+      color: white; }
+  .purchase .size-select button {
+    background: white; }
+  .purchase .color-select {
+    padding-top: 2.5rem;
+    display: block; }
+  .purchase label {
+    padding-top: 1rem; }
+  .purchase select {
+    display: block;
+    clear: both; }
+  .purchase button[type="submit"] {
+    display: block;
+    clear: both; }
+  .purchase select, .purchase button {
+    margin-left: 0.5rem; }
+
+/*******************************************************************************
+	suggested Items Section
+*******************************************************************************/
+.suggested-items:before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+
+.suggested-items h3 {
+  text-align: left; }
+.suggested-items .items {
+  white-space: nowrap; }
+  .suggested-items .items div {
+    display: inline-block; }
+.suggested-items .items:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*******************************************************************************
+	Reviews Section
+*******************************************************************************/
+.reviews:before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+
+.reviews h3 {
+  text-align: left; }
+.reviews .sub-reviews:before {
+  float: left;
+  content: "";
+  display: block;
+  height: 500px;
+  width: 1px;
+  background: #abd0f8;
+  margin-right: 0.5rem; }
+.reviews .more {
+  width: 100%; }
+  .reviews .more a {
+    width: 25%;
+    margin-left: 12.5%; }
+  .reviews .more a:last-of-type {
+    margin-left: 25%; }
+
+/*******************************************************************************
+	Product
+*******************************************************************************/
+/*
+ * Handles the styling of the products accross the site
+ */
+ /*******************************************************************************
+	Global 
+*******************************************************************************/
+/*******************************************************************************
+	Product Small
+*******************************************************************************/
+.product-small {
+  width: 300px;
+  margin: 1rem 1rem; }
+  .product-small img {
+    width: 100px;
+    height: 100px;
+    float: left; }
+  .product-small div {
+    float: left;
+    margin-left: 0.5rem; }
+    .product-small div h4 {
+      font-weight: bold; }
+  .product-small a {
+    color: black; }
+
+.product-small:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*******************************************************************************
+	Product Large
+*******************************************************************************/
+.product-large {
+  padding: 1rem 0; }
+  .product-large h1, .product-large h2, .product-large h3, .product-large h4 {
+    text-align: left;
+    margin: 0 0 0 1rem; }
+  .product-large p {
+    padding: 1rem 0; }
+  .product-large #img-slider {
+    float: left;
+    height: 18.75rem;
+    background: red; }
+  .product-large .product-info {
+    float: right; }
+    .product-large .product-info h2 {
+      padding-top: 2rem; }
+    .product-large .product-info h4 {
+      padding-top: 0.5rem; }
+  .product-large table {
+    margin: 1rem 0; }
+  .product-large td:last-of-type {
+    padding-left: 1rem; }
+
+/*******************************************************************************
+	Review
+*******************************************************************************/
+.review {
+  padding: 1rem 0 1rem 0; }
+  .review h4 {
+    font-size: 1rem;
+    font-weight: bold; }
+  .review p:first-of-type {
+    font-size: 0.8rem; }
 
 /*******************************************************************************
 	Error pages

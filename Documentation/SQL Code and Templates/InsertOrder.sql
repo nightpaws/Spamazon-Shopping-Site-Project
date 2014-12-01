@@ -1,0 +1,1 @@
+INSERT INTO `cs312_order`( `cs312_useremail`, `date`, `street`, `town`, `county`, `postcode`) VALUES ("fuzzywuff@mail.net","2014-10-18","21 Someplace Road","Dumbarton","Dunbartonshire","G81 7TN");

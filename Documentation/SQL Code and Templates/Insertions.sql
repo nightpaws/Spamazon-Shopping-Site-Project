@@ -1,0 +1,72 @@
+INSERT INTO cs312_payment
+  (cs312_useremail, 
+  cardNo, 
+  cardName, 
+  sortcode, 
+  securityNo, 
+  expiryMonth, 
+  expiryYear) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO cs312_stock
+  (name, 
+  `size`, 
+  colour, 
+  description, 
+  quantity, 
+  price, 
+  image) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO cs312_orderItem
+  (cs312_orderId, 
+  cs312_stockname, 
+  cs312_stocksize, 
+  cs312_stockcolour, 
+  quantityOrdered) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO cs312_order
+  (Id, 
+  cs312_useremail, 
+  `date`, 
+  street, 
+  town, 
+  county, 
+  postcode) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO cs312_user
+  (email, 
+  fname, 
+  sname, 
+  dob, 
+  password) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);

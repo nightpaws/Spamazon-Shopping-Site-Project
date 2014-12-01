@@ -10,7 +10,7 @@
 	<article id="reg">
 		<h1 class="page-header">Registration</h1>
 		<div class="reg">
-			<form name="reg" action="#" method="post">
+			<form name="reg" action="#" method="post" onsubmit="return validateRegistration()">
 				<table>
 					<tr>
 						<td>
@@ -64,4 +64,5 @@
 		<?php include('page-elements/footer.php'); ?>
 	</footer>
 </body>
+<script type="text/javascript" src="./js/registerValidation.js"></script>
 </html>

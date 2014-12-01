@@ -11,6 +11,11 @@ function validateRegistration() {
     return false;
   }
 
+  if (x.length>254) {
+    alert("Your username is too long")
+    return false;
+  }
+
   //Password validation
   //These are in different if statements rather than 1 big one so that
   //More informative error messages can be displayed to the user
@@ -35,6 +40,12 @@ function validateRegistration() {
     alert("Your password is not secure enough, it needs to be 8 characters long, and have at least 1 upper case letter and 1 number");
     return false;
   }
+
+  if (x.length>127) {
+    alert("Your password is too long")
+    return false;
+  }
+
   var originalPass = x;
   x = document.forms["reg"]["PasswordC"].value;
 
@@ -54,9 +65,19 @@ function validateRegistration() {
     return false;
   }
 
+  if (x.length>59) {
+    alert("Your first name is too long")
+    return false;
+  }
+
   x = document.forms["reg"]["sname"].value;
   if (x==null || x==""){
     alert("Surname cannot be left blank");
+    return false;
+  }
+
+  if (x.length>59) {
+    alert("Your surname is too long")
     return false;
   }
 }

@@ -7,7 +7,7 @@
 	<header>
 		<?php include('page-elements/header.php'); ?>
 	</header>
-	<article id="product-page" class="l-content containter">
+	<article id="product-page" class="l-content container">
 		<div class="group">
 			<div class="product-page-info col s9">
 				<?php include('page-elements/product/product-large.php'); ?>

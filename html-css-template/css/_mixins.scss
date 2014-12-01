@@ -17,6 +17,12 @@
 	background-clip: padding-box;
 }
 
+@mixin background-clip-content(){
+	-webkit-background-clip: content-box;
+	-moz-background-clip: content-box;
+	background-clip: content-box;
+}
+
 @mixin horizontal-break-line($color, $height){
 	content: "";
 	display: block;

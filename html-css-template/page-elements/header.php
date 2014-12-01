@@ -43,7 +43,13 @@
 				<a href="#cart-menu" title="Show navigation">Show navigation<span class="nav-icon cart-icon"></span></a>
 	    		<a href="#" title="Hide navigation">Hide navigation<span class="nav-icon cart-icon"></a>
 				<ul>
-					<li><a href="#">Cart</a></li>
+					<li>
+						<a href="cart-page.php">Cart</a>
+						<ul>
+							<li><a href="cart-page.php">View Cart</a></li>
+							<li><a href="#">Checkout</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 			<nav id="user-menu" role="navigation">

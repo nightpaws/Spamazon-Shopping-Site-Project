@@ -72,10 +72,59 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 @import "_login-reg.scss";
 
 /*******************************************************************************
+	Checkout
+*******************************************************************************/
+
+#cart-page{
+
+	h3{
+		margin-top:2rem;
+	}
+	
+	.cart-item{
+		border-right: solid 1px $lightblue;
+		padding-top: 0.8rem;
+	}
+
+	.cart-item:first-of-type{
+		margin-top: 2rem;
+	}
+
+	.cart-item:after{
+		content: "";
+		display: block;
+		width: 80%;
+		margin: auto;
+		height: 1px;
+		background: $lightblue;
+	}
+
+	.cart-item:last-of-type:after{
+		display: none;
+	}
+
+	.to-checkout{
+		.a-button{
+			width: 70%;
+			display: block;
+			margin: auto;
+			margin-top: 10rem;
+		}
+	}
+}
+
+
+/*******************************************************************************
 	Product Page
 *******************************************************************************/
 
 @import "_product-page.scss";
+
+/*******************************************************************************
+	Reviews Page
+*******************************************************************************/
+
+@import "_reviews-page.scss";
 
 /*******************************************************************************
 	Product

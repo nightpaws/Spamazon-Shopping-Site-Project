@@ -1,5 +1,6 @@
+<h1 class="page-header">Address</h1>
 <div class="reg">
-	<form name="reg" action="#" method="post">
+	<form name="address" action="#" method="post">
 		<table>
 			<tr>
 				<td>

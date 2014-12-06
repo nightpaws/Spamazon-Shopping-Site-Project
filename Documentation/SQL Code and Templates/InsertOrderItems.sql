@@ -1,0 +1,2 @@
+INSERT INTO `cs312_orderItem`(`cs312_orderId`, `cs312_stockname`, `cs312_stocksize`, `cs312_stockcolour`, `quantityOrdered`) VALUES (1,"NASTARDIS T-Shirt","L","Navy Blue",2);
+INSERT INTO `cs312_orderItem`(`cs312_orderId`, `cs312_stockname`, `cs312_stocksize`, `cs312_stockcolour`, `quantityOrdered`) VALUES (1,"IPDC Shirt","L","Black",1);

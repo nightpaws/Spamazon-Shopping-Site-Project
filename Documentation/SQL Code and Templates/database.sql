@@ -14,7 +14,7 @@ CREATE TABLE cs312_stock (
   colour      varchar(20) NOT NULL, 
   description varchar(255), 
   quantity    int(10) NOT NULL, 
-  price       int(10) NOT NULL, 
+  price       decimal(10, 2) NOT NULL, 
   image       varchar(255), 
   PRIMARY KEY (name, 
   `size`, 
@@ -25,7 +25,10 @@ CREATE TABLE cs312_orderItem (
   cs312_stocksize   char(1) NOT NULL, 
   cs312_stockcolour varchar(20) NOT NULL, 
   quantityOrdered   int(10) NOT NULL, 
-  PRIMARY KEY (cs312_orderId)) ENGINE=InnoDB;
+  PRIMARY KEY (cs312_orderId, 
+  cs312_stockname, 
+  cs312_stocksize, 
+  cs312_stockcolour)) ENGINE=InnoDB;
 CREATE TABLE cs312_order (
   Id              bigint(19) NOT NULL AUTO_INCREMENT, 
   cs312_useremail varchar(255) NOT NULL, 

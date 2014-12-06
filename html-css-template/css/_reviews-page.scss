@@ -1,0 +1,12 @@
+#reviews-page{
+	
+	nav {
+		a:visited{
+			color: $darkblue;
+		}
+	}
+
+	nav:after{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+}

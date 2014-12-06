@@ -438,6 +438,67 @@ h1 {
       min-width: 14.07rem; }
 
 /*******************************************************************************
+	Account Management
+*******************************************************************************/
+#account-man .group:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+#account-man .group > div:not(:last-of-type) {
+  border-right: solid 1px #abd0f8;
+  height: 100%; }
+#account-man .order, #account-man .details {
+  margin: 0.2rem 1rem; }
+  #account-man .order span, #account-man .details span {
+    float: right; }
+#account-man .danger-zone {
+  width: 71.87500rem;
+  margin: auto; }
+  #account-man .danger-zone .a-button {
+    width: 66%;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #DF3E3E;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #account-man .danger-zone .a-button:hover {
+    background-color: #e66a6a; }
+
+#account-man-close p {
+  text-align: center; }
+#account-man-close button {
+  background-color: #DF3E3E;
+  display: block;
+  width: 66%;
+  margin: auto;
+  margin-top: 1rem;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+#account-man-close button:hover {
+  background-color: #e66a6a; }
+
+#account-man-pass-change form, #account-man-pass-change table, #account-man-pass-change button, #account-man-email-change form, #account-man-email-change table, #account-man-email-change button {
+  margin: auto; }
+#account-man-pass-change h2, #account-man-email-change h2 {
+  margin: 2rem 0 3rem 0; }
+#account-man-pass-change button, #account-man-email-change button {
+  display: block;
+  width: 40%;
+  margin-top: 2rem; }
+#account-man-pass-change tr > td label, #account-man-email-change tr > td label {
+  width: 15rem; }
+#account-man-pass-change #current-pass, #account-man-email-change #current-pass {
+  margin-bottom: 1rem; }
+
+/*******************************************************************************
 	Checkout
 *******************************************************************************/
 #cart-page h3 {
@@ -461,6 +522,35 @@ h1 {
   display: block;
   margin: auto;
   margin-top: 10rem; }
+
+/*******************************************************************************
+	View Order page
+*******************************************************************************/
+#view-order h3 {
+  padding: 1rem 0 0.5rem 0; }
+#view-order #product::before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+#view-order #payment::before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+#view-order #address::before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+#view-order .product-details {
+  display: none; }
 
 /*******************************************************************************
 	Product Page
@@ -661,9 +751,10 @@ h1 {
   .product-large #img-slider {
     float: left;
     height: 18.75rem;
+    width: 18.75rem;
     background: red; }
   .product-large .product-info {
-    float: right; }
+    float: left; }
     .product-large .product-info h2 {
       padding-top: 2rem; }
     .product-large .product-info h4 {

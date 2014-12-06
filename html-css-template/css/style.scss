@@ -72,44 +72,119 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 @import "_login-reg.scss";
 
 /*******************************************************************************
-	Checkout
+	Account Management
 *******************************************************************************/
 
-#cart-page{
-
-	h3{
-		margin-top:2rem;
-	}
-	
-	.cart-item{
-		border-right: solid 1px $lightblue;
-		padding-top: 0.8rem;
+#account-man{
+	.group:nth-child(n + 2):before{
+		@include horizontal-break-line($lightblue, 1px);
 	}
 
-	.cart-item:first-of-type{
+	.group{
+		> div:not(:last-of-type){
+			border-right: solid 1px $lightblue;
+			height: 100%;
+		}
+	}
+
+	.order, .details{
+		margin: 0.2rem 1rem;
+		span{
+			float: right;
+		}
+	}
+
+	.danger-zone{
+		width: 71.87500rem;
+		margin: auto;
+
+		.a-button{
+			width: 66%;
+			display: block;
+			margin: auto;
+			margin-top: 1rem;
+			background-color: #DF3E3E;
+			@include transition-duration(0.2s);
+		}
+
+		.a-button:hover{
+			background-color: lighten(#DF3E3E, 10%);
+		}
+	}
+}
+
+#account-man-close{
+	p{
+		text-align: center;
+	}
+
+	button{
+		background-color: #DF3E3E;
+		display: block;
+		width: 66%;
+		margin: auto;
+		margin-top: 1rem;
+		@include transition-duration(0.2s);
+	}
+
+	button:hover{
+		background-color: lighten(#DF3E3E, 10%);
+	}
+}
+
+#account-man-pass-change, #account-man-email-change{
+
+	form, table, button{
+		margin: auto;
+	}
+
+	h2{
+		margin: 2rem 0 3rem 0;
+	}
+
+	button{
+		display: block;
+		width: 40%;
 		margin-top: 2rem;
 	}
 
-	.cart-item:after{
-		content: "";
-		display: block;
-		width: 80%;
-		margin: auto;
-		height: 1px;
-		background: $lightblue;
-	}
-
-	.cart-item:last-of-type:after{
-		display: none;
-	}
-
-	.to-checkout{
-		.a-button{
-			width: 70%;
-			display: block;
-			margin: auto;
-			margin-top: 10rem;
+	tr{
+		>td label{
+			width: 15rem;
 		}
+	}
+
+	#current-pass{
+		margin-bottom: 1rem;
+	}
+}
+
+/*******************************************************************************
+	Checkout
+*******************************************************************************/
+
+@import "_cart.scss";
+
+/*******************************************************************************
+	View Order page
+*******************************************************************************/
+
+#view-order{
+	h3{
+		padding: 1rem 0 0.5rem 0;
+	}
+	#product::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+	#payment::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+	#address::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+
+	.product-details{
+		display: none;
 	}
 }
 

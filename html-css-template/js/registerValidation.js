@@ -80,4 +80,18 @@ function validateRegistration() {
     alert("Your surname is too long")
     return false;
   }
+  
+  //Date of Birth Validation
+  // regular expression to match required date format
+  var dob = document.forms["reg"]["dob"].value;
+  var dateReg = /(^(((0[1-9]|[12][0-8])[-](0[1-9]|1[012]))|((29|30|31)[-](0[13578]|1[02]))|((29|30)[-](0[4,6,9]|11)))[-](19|[2-9][0-9])\d\d$)|(^29[-]02[-](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)/;
+  if (dob == null || dob == "" ){
+  	alert("Date of birth cannot be blank");
+  	return false;
+  }
+  
+  if(!dateReg.test(dob)){
+  	alert("Date of birth must be of the format DD-MM-YYYY");
+  	return false;
+  }
 }

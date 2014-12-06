@@ -55,6 +55,14 @@
 							<input type="text" name="sname">
 						</td>
 					</tr>
+					<tr>
+						<td>
+							<label for="dob">Date of Birth:</label>
+						</td>
+						<td>
+							<input type="text" name="dob">
+						</td>
+					</tr>
 				</table>
 				<button type="submit" name="createacc">Create Account</button>
 			</form>

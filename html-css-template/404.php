@@ -1,3 +1,10 @@
+<?php
+	//The land of variables
+	$page_type = "error";
+	$page_title = "404 - page lost in space";	//What is displayed as the page title in the browser
+	$page_description = "Page not found" //The page description
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

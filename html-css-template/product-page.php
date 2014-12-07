@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "product";
+	$page_title = "Product Name";	//What is displayed As the page title in the browser
+	$page_description = "Brief product description" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

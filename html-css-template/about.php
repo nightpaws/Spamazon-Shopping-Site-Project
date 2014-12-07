@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "info";
+	$page_title = "About Us";	//What is displayed As the page title in the browser
+	$page_description = "All about Spamazon the home of highish quality clothing" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -14,11 +14,11 @@
 				<li><a href="#">Shipping</a></li>
 			</ul>
 			<ul>
-				<li>Shopping Help</li>
-				<li><a href="#">Track your order</a></li>
-				<li><a href="#">Open orders</a></li>
+				<li>Account</li>
+				<li><a href="account-man.php">Open Orders</a></li>
+				<li><a href="account-man.php">Past Orders</a></li>
+				<li><a href="account-man.php#account-settings">Account Settings</a></li>
 				<li><a href="#">Returns & replacements</a></li>
-				<li><a href="#">Help</a></li>
 			</ul>
 		</div>
 		<div id="footer-links-mobile">

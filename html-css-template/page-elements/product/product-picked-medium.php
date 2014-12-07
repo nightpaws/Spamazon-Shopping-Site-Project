@@ -1,4 +1,4 @@
-<div class="product-picked-medium">
+<div class="product-picked-medium product-medium">
 	<a href="product-page.php">
 	<img src="#" alt="Product image">
 	<div class="product-info">

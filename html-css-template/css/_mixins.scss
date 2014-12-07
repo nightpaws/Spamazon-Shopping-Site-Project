@@ -8,19 +8,29 @@
 @mixin box-sizing(){
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 @mixin background-clip(){
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding-box;
+	-ms-background-clip: padding-box;
 	background-clip: padding-box;
 }
 
 @mixin background-clip-content(){
 	-webkit-background-clip: content-box;
 	-moz-background-clip: content-box;
+	-ms-background-clip: content-box;
 	background-clip: content-box;
+}
+
+@mixin box-shadow($args){
+	-webkit-box-shadow: $args;
+	-moz-box-shadow: $args;
+	-ms-box-shadow: $args;
+	box-shadow: $args;
 }
 
 @mixin horizontal-break-line($color, $height){

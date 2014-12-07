@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "account-man";
+	$page_title = "Log In";	//What is displayed As the page title in the browser
+	$page_description = "Spamazon Log In" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

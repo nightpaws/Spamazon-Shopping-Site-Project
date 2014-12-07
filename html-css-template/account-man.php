@@ -65,7 +65,7 @@
 				</div>
 			</div>			
 		</div>
-		<div class="group">
+		<div class="group" id="account-settings">
 			<h2>Account Settings</h2>
 			<div class="col s4">
 				<h3>Account Details</h3>

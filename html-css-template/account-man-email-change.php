@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "account-man";
+	$page_title = "Changing Your email Address";	//What is displayed As the page title in the browser
+	$page_description = "This page is for changing your email address" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

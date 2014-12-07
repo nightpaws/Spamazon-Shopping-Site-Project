@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "account-man";
+	$page_title = "Register";	//What is displayed As the page title in the browser
+	$page_description = "The registration page for Spamazon" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

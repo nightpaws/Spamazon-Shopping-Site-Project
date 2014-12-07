@@ -1,3 +1,11 @@
+<?php
+	//The land of variables
+	$page_type = "reviews";
+	$page_title = "Product name reviews";	//What is displayed As the page title in the browser
+	$page_description = "All the wonderful things people said about our product" //The page description
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,0 +1,122 @@
+.flexslider{
+	height: 20rem;
+	width: 101%;
+	margin-left: -0.5%;
+	@include box-shadow(none);
+	border: 1px solid white;
+
+	.slides{
+		height: 100%;
+
+		li{
+			height: 100%;
+		}
+	}
+
+	.flex-direction-nav a{
+		overflow: initial;
+	}
+
+	.flex-control-paging li{
+
+		a{
+			background: $blue;
+		}
+
+		.flex-active{
+			background: $darkblue;
+		}
+	}
+}
+
+.welcome{
+	padding-top: 4rem;
+	p{
+		text-align: center;
+		margin-top: 2rem;
+	}
+}
+
+.christmas{
+
+	background: #BF1002;
+	background: #fd2402; 
+	background: -moz-linear-gradient(-45deg,  #fd2402 0%, #bf1002 61%, #bf1002 61%, #d61204 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fd2402), color-stop(61%,#bf1002), color-stop(61%,#bf1002), color-stop(100%,#d61204)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #fd2402 0%,#bf1002 61%,#bf1002 61%,#d61204 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #fd2402 0%,#bf1002 61%,#bf1002 61%,#d61204 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #fd2402 0%,#bf1002 61%,#bf1002 61%,#d61204 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #fd2402 0%,#bf1002 61%,#bf1002 61%,#d61204 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd2402', endColorstr='#d61204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: white;
+	height: 100%;
+
+	h1, h2{
+		display: inline-block;
+	}
+	h1{
+		font-size: 4rem;
+	}
+	h2:first-of-type{
+		margin: 0 1rem 0 5rem;
+	}
+	h2:last-of-type{
+		margin: 1rem 0 0 1rem;
+	}
+	div:last-of-type{
+		width: 100%;
+		text-align: right;
+		position: absolute;
+		bottom: 2rem;
+
+		h2{
+			margin-right: 5rem;
+		}
+	}
+}
+
+.men{
+	height: 100%;
+
+	h1{
+		font-weight: bold;
+	}
+
+	a, a:visited{
+		padding-top: 4rem;
+		color: black;
+		display: block;
+	}
+}
+
+.todays-deals:before{
+	@include horizontal-break-line($lightblue, 1px);
+}
+
+.todays-deals{
+	.product:not(:last-of-type){
+		border-right: solid 1px $lightblue;
+		height: 100%;
+	}
+}
+
+.deal-header{
+	h2{
+		float: left;
+	}
+	h3{
+		float: right;
+		padding-top: 0.5rem;
+	}
+}
+.deal-header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.suggested-items{
+	h2{
+		text-align: left;
+	}
+}

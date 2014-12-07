@@ -11,7 +11,7 @@ function validateLogin() {
     return false;
   }
   if (x.length>254) {
-    alert("Your username is too long")
+    alert("Your username is too long, it needs to be less than 255 characters in length")
     return false;
   }
   x = document.forms["login"]["password"].value;
@@ -20,7 +20,7 @@ function validateLogin() {
     return false;
   }
   if (x.length>127) {
-    alert("Your password is too long")
+    alert("Your password is too long, it needs to be less than 128 characters in length")
     return false;
   }
 }

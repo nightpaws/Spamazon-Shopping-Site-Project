@@ -9,6 +9,7 @@
 	</header>
 	<article>
 		<?php include('page-elements/checkout/address.php') ?>
+		<?php include('page-elements/checkout/card.php') ?>
 	</article>
 	<footer>
 		<?php include('page-elements/footer.php'); ?>

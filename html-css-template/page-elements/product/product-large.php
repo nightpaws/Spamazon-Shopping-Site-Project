@@ -1,13 +1,13 @@
 <div class="product-large container">
 	<div class="group">
-		<div id="img-slider" class="col s4">
+		<div id="img-slider">
 			<img src="#" alt="<?php //img alt text?>">
 			<img src="#" alt="<?php //img alt text?>">
 			<img src="#" alt="<?php //img alt text?>">
 			<img src="#" alt="<?php //img alt text?>">
 			<img src="#" alt="<?php //img alt text?>">
 		</div>
-		<div class="product-info col s8">
+		<div class="product-info">
 			<hgroup>
 				<h1>Product Name</h1>
 				<h4>By Product Maker</h4>

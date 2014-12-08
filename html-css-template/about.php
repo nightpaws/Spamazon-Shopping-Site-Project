@@ -62,8 +62,10 @@
 				</li>
 				<li>
 					<h3>Aidan O'Grady</h3>
-					<p></p>
-					<ul></ul>
+					<p>Done primary PHP, worked on the checkout and various other wee bits.</p>
+					<ul>
+						<li><a class="github" href="https://github.com/ANuclearError">GitHub</a></li>
+					</ul>
 				</li>
 				<li>
 					<h3>Chloe Forsyth</h3>

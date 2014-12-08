@@ -81,7 +81,7 @@ function validateRegistration() {
     alert("Your surname is too long, it needs to be less than 60 characters in length")
     return false;
   }
-  
+
   //Date of Birth Validation
   // regular expression to match required date format
   var dob = document.forms["reg"]["dob"].value;
@@ -90,7 +90,7 @@ function validateRegistration() {
   	alert("Date of birth cannot be blank");
   	return false;
   }
-  
+
   if(!dateReg.test(dob)){
   	alert("Date of birth must be of the format DD-MM-YYYY");
   	return false;

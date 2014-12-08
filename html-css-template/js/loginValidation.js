@@ -23,4 +23,10 @@ function validateLogin() {
     alert("Your password is too long, it needs to be less than 128 characters in length")
     return false;
   }
+  //if(inDatabase sql query){
+    //check the user details are correct in the database
+    //now store these details in the cookie.
+    //userEmail = test@example.com; //to change this to sql query later
+    //document.cookie = userEmail+"&*&$%^"+document.cookie;
+  //}
 }

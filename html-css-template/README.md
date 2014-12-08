@@ -9,10 +9,11 @@ This is a design template for the final webstore.
 ###Authors###
 
 Thomas Maxwell		- gvb12182@uni.strath.ac.uk
+Stewart Key       - ypb12171@uni.strath.ac.uk (stewart.key.2013@uni.strath.ac.uk)
 
 
 ###License###
 
-Copyright 2014 
+Copyright 2014
 
 This project can not be copied and/or distributed without the express permission of the authors.

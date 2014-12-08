@@ -76,7 +76,7 @@
 			<h2 class="page-subheader">Contact Us</h2>
 			<p>
 				Want to get in touch? Well unfortunately as this is a magical fictional website
-				that is not actually possible. There is quite simply no one home to respond. 
+				that is not actually possible. There is quite simply no one home to respond.
 			</p>
 			<p>
 				Still want to get in touch? Try the email addresses which can be found <a href="about.php#people">here</a>
@@ -85,7 +85,7 @@
 		<div id="press">
 			<h2 class="page-subheader">Press</h2>
 			<p>
-				What did we sell to make you want to talk to us? Oh well since this is a magical 
+				What did we sell to make you want to talk to us? Oh well since this is a magical
 				fictional website there is no press department, those people expect to be paid and we don't actually make any money. So there is quite simply no one home to respond.
 				<br/>
 				But hey this section makes us look professional at least!

@@ -19,11 +19,13 @@ INSERT INTO cs312_stock
   `size`, 
   colour, 
   description, 
+  category, 
   quantity, 
   price, 
   image) 
 VALUES 
   (?, 
+  ?, 
   ?, 
   ?, 
   ?, 

@@ -13,6 +13,7 @@ CREATE TABLE cs312_stock (
   `size`      char(1) NOT NULL, 
   colour      varchar(20) NOT NULL, 
   description varchar(255), 
+  category    varchar(255) NOT NULL, 
   quantity    int(10) NOT NULL, 
   price       decimal(10, 2) NOT NULL, 
   image       varchar(255), 

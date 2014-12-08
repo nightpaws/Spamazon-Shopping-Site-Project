@@ -18,7 +18,7 @@
 	<article id="reg">
 		<h1 class="page-header">Registration</h1>
 		<div class="reg">
-			<form name="reg" action="#" method="post" onsubmit="return validateRegistration()">
+			<form name="reg" action="databaseFunct/regmember.php" method="post" onsubmit="return validateRegistration()">
 				<table>
 					<tr>
 						<td>
@@ -30,18 +30,18 @@
 					</tr>
 					<tr>
 						<td>
-							<label for="password">Password:</label>
+							<label for="passwd">Password:</label>
 						</td>
 						<td>
-							<input type="password" name="Password">
+							<input type="password" name="password">
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<label for="passwordC">Confirm Password:</label>
+							<label for="passwdC">Confirm Password:</label>
 						</td>
 						<td>
-							<input type="password" name="PasswordC">
+							<input type="password" name="passwordC">
 						</td>
 					</tr>
 				</table>
@@ -57,7 +57,7 @@
 					</tr>
 					<tr>
 						<td>
-							<label for="sname">Second name:</label>
+							<label for="sname">Surname:</label>
 						</td>
 						<td>
 							<input type="text" name="sname">

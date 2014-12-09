@@ -22,7 +22,7 @@
 			This action can not be undone. By closing your account, your account will be gone
 			for the rest of time. It can not be reopened!
 		</p>
-		<form action="#">
+		<form action="databaseFunct/delAcc.php">
 			<button type="submit" name="closeacc">Close Account</button>
 		</form>
 	</article>

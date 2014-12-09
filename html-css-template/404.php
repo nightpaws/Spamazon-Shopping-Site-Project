@@ -8,11 +8,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php  	include ('head.php'); ?>
+	<?php  	include ('page-elements/head.php'); ?>
 </head>
 <body>
 	<header>
-		<?php include('header.php'); ?>
+		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article id="error">
 		<h1 id="code">404!</h1>
@@ -26,7 +26,7 @@
 		</ul>
 	</article>
 	<footer>
-		<?php include('footer.php'); ?>
+		<?php include('page-elements/footer.php'); ?>
 	</footer>
 </body>
 </html>

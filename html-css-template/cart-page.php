@@ -1,7 +1,7 @@
 <?php
 	//The land of variables
 	$page_type = "cart";
-	$page_title = "Your shopping cart";	//What is displayed As the page title in the browser
+	$page_title = "Shopping Cart";	//What is displayed As the page title in the browser
 	$page_description = "Your Spamazon shopping cart" //The page description
 ?>
 

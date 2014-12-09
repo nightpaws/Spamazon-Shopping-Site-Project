@@ -1,7 +1,7 @@
 <?php
 	//The land of variables
 	$page_type = "account-man";
-	$page_title = "Close your account";	//What is displayed as the page title in the browser
+	$page_title = "Close Your Account";	//What is displayed as the page title in the browser
 	$page_description = "While we are sorry to see you go, we don't understand, please don't leave us!" //The page description
 ?>
 

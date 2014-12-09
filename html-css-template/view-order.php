@@ -1,7 +1,7 @@
 <?php
 	//The land of variables
 	$page_type = "order";
-	$page_title = "Your order";	//What is displayed As the page title in the browser
+	$page_title = "Your Order";	//What is displayed As the page title in the browser
 	$page_description = "This order was placed on 11/11/2011" //The page description
 ?>
 

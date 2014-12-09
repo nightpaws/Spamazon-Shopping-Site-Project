@@ -44,33 +44,45 @@
 					<p>Oversaw the front end design and development of Spamazon.</p>
 					<ul>
 						<li><a class="website" href="http://tom-maxwell.com">tom-maxwell.com</a></li>
-						<li><a class="email"> My email here <?php //hello@tom-maxwell.com ?></a></li>
+						<li><a class="email"> Email Address Goes Here<?php //hello@tom-maxwell.com ?></a></li>
 						<li><a class="twitter" href="https://twitter.com/confuddledpengu">@confuddledpengu</a></li>
-						<li><a class="github" href="https://github.com/ConfuddledPenguin">GitHub</a></li>
+						<li><a class="github" href="https://github.com/ConfuddledPenguin">GitHub: ConfuddledPenguin</a></li>
 						<?php //can do linkedin with the class of linkedin ?>
 					</ul>
 				</li>
 				<li>
 					<h3>Craig Morrison</h3>
-					<p></p>
-					<ul></ul>
+					<p>Constructed the database, documentation and queries. </br>
+					Also built the code behind the registration page.</p>
+					<ul>
+						<li><a class="website" href="http://nightpaws.eu">nightpaws.eu</a></li>
+						<li><a class="email"> Email Address Goes Here <?php //admin@nightpaws.eu ?></a></li>
+						<li><a class="twitter" href="https://twitter.com/nightpaws">@nightpaws</a></li>
+						<li><a class="github" href="https://github.com/nightpaws">GitHub: Nightpaws</a></li>
+						<li><a class="linkedin" href="https://www.linkedin.com/in/craigmorrison1">LinkedIn</a></li>
+					</ul>
 				</li>
 				<li>
 					<h3>Stewart Key</h3>
-					<p></p>
-					<ul></ul>
+					<p>Done fuck all so far.</p>
+					<ul>
+						<li><a class="github" href="https://github.com/Epailes">GitHub: Epailes</a></li>
+					</ul>
+					
 				</li>
 				<li>
 					<h3>Aidan O'Grady</h3>
-					<p>Done primary PHP, worked on the checkout and various other wee bits.</p>
+					<p>Done fuck all so far.</p>
 					<ul>
-						<li><a class="github" href="https://github.com/ANuclearError">GitHub</a></li>
+						<li><a class="github" href="https://github.com/ANuclearError">GitHub: ANuclearError</a></li>
 					</ul>
 				</li>
 				<li>
 					<h3>Chloe Forsyth</h3>
-					<p></p>
-					<ul></ul>
+					<p>Done fuck all so far.</p>
+					<ul>
+						<li><a class="github" href="https://github.com/pyrobunny">GitHub: pyrobunny</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>

@@ -1,18 +1,18 @@
 <?php
 	//The land of variables
 	$page_type = "error";
-	$page_title = "404 - page lost in space";	//What is displayed as the page title in the browser
+	$page_title = "404 - Page Lost in Space";	//What is displayed as the page title in the browser
 	$page_description = "Page not found" //The page description
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<?php  	include ('head.php'); ?>
+	<?php  	include ('page-elements/head.php'); ?>
 </head>
 <body>
 	<header>
-		<?php include('header.php'); ?>
+		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article id="error">
 		<h1 id="code">404!</h1>
@@ -26,7 +26,7 @@
 		</ul>
 	</article>
 	<footer>
-		<?php include('footer.php'); ?>
+		<?php include('page-elements/footer.php'); ?>
 	</footer>
 </body>
 </html>

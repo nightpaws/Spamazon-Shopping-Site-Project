@@ -3,13 +3,17 @@
 $page_type        = "account-man";
 $page_title       = "Register"; //What is displayed As the page title in the browser
 $page_description = "The registration page for Spamazon" //The page description
-    ?>
-
+ ?>
+ 
+<script type="text/javascript">
+function delayedRedirect(){
+    window.location = "./index.php"
+}
+</script>
 
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="3; url=~/index.php" />
   <?php
 include('page-elements/head.php');
 ?>
@@ -20,7 +24,8 @@ include('page-elements/head.php');
 include('page-elements/header.php');
 ?>
   </header>
-  <body>
+  <body onLoad="setTimeout('delayedRedirect()', 3000)">
+
     <h1>
       Thank you for registering with Spamazon!
     </h1>

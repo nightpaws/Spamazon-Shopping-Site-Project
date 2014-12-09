@@ -8,10 +8,10 @@
 			</ul>
 			<ul>
 				<li>Policies<li>
-				<li><a href="#">T&C of Use & Sale</a></li>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Cookies</a></li>
-				<li><a href="#">Shipping</a></li>
+				<li><a href="policies.php#terms">T&C of Use & Sale</a></li>
+				<li><a href="policies.php#privacy">Privacy</a></li>
+				<li><a href="policies.php#cookies">Cookies</a></li>
+				<li><a href="policies.php#shipping">Shipping</a></li>
 			</ul>
 			<ul>
 				<li>Account</li>

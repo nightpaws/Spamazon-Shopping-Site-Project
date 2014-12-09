@@ -30,8 +30,8 @@
         $colour = $row{"colour"};
         $category = $row{"category"};
         $quantity = $row{"quantity"}; 
-        $price = $row{"quantity"};
-        $image = $row{"quantity"};
+        $price = $row{"price"};
+        $image = $row{"image"};
 
         ?>
 

@@ -20,7 +20,7 @@
 		<div id="about">
 			<p>
 				Spamazon was created as a project for the class CS312 - Web Application Development at the
-				University of Strathcylde, more information about the class can be found <a href="http://www.strath.ac.uk/cis/localteaching/localug/cs312/">here</a>.
+				University of Strathclyde, more information about the class can be found <a href="http://www.strath.ac.uk/cis/localteaching/localug/cs312/">here</a>.
 
 				The aim of the assignment is gain experience in the following technologies: HTML, CSS, JavaScript, AJAX, PHP and SQL. We are allowed to use other technologies to achieve the goal but must include those mentioned above.
 
@@ -37,7 +37,7 @@
 		</div>
 		<div id="people">
 			<h2 class="page-subheader">The People</h2>
-			<p>The people involved in creating <a href="index.phph">Spamazon</a> are:</p>
+			<p>The people involved in creating <a href="index.php">Spamazon</a> are:</p>
 			<ul>
 				<li>
 					<h3>Thomas Maxwell</h3>
@@ -53,7 +53,8 @@
 				<li>
 					<h3>Craig Morrison</h3>
 					<p>Constructed the database, documentation and queries. </br>
-					Also built the code behind the registration page.</p>
+					Also built the code behind several pages, lots of server side validation.</br>
+					Designed the site logo.</p>
 					<ul>
 						<li><a class="website" href="http://nightpaws.eu">nightpaws.eu</a></li>
 						<li><a class="email"> Email Address Goes Here <?php //admin@nightpaws.eu ?></a></li>

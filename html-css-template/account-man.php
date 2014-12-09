@@ -1,3 +1,10 @@
+<?php
+	//The land of variables
+	$page_type = "account-man";
+	$page_title = "Your Account";	//What is displayed As the page title in the browser
+	$page_description = "This page is for managing your account" //The page description
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

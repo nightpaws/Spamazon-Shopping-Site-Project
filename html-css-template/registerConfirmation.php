@@ -9,7 +9,7 @@ $page_description = "The registration page for Spamazon" //The page description
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="5; url=http://127.0.0.1/cs312/index.php" />
+  <meta http-equiv="refresh" content="3; url=~/index.php" />
   <?php
 include('page-elements/head.php');
 ?>

@@ -18,7 +18,7 @@
 				<li><a href="account-man.php">Open Orders</a></li>
 				<li><a href="account-man.php">Past Orders</a></li>
 				<li><a href="account-man.php#account-settings">Account Settings</a></li>
-				<li><a href="#">Returns & replacements</a></li>
+				<li><a href="returns.php">Returns & replacements</a></li>
 			</ul>
 		</div>
 		<div id="footer-links-mobile">

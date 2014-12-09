@@ -29,6 +29,7 @@
         $size = $row{"size"};
         $colour = $row{"colour"};
         $category = $row{"category"};
+        $description = $row{"description"};
         $quantity = $row{"quantity"}; 
         $price = $row{"price"};
         $image = $row{"image"};

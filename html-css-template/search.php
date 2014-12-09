@@ -1,3 +1,10 @@
+<?php
+        //The land of variables
+        $page_type = "search";
+        $page_title = "Search";       //What is displayed As the page title in the browser
+        $page_description = "Trying to find something nice? Good luck with that." //The page description
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +20,7 @@
 				
 			</div>
 			<div class="col s8">
-				
+				<?php include('databaseFunct/search.php'); ?>
 			</div>
 		</div>
 	</article>

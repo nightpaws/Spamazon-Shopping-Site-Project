@@ -5,7 +5,6 @@
 	$page_description = "Brief product description" //The page description
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>

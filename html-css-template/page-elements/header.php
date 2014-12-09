@@ -1,6 +1,6 @@
 <img src="./img/logo.png" alt="Spamazon logo">
-		<form action="#" method="GET">
-			<input type="text" />
+		<form action="search.php" method="GET">
+			<input type="text" name="term"/>
 			<button type="submit">Search</button>
 		</form>
 		<div id="nav">

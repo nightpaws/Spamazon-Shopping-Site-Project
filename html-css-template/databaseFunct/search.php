@@ -17,10 +17,13 @@
     $result = mysql_query("SELECT * FROM cs312_stock WHERE name LIKE '%$term%'
         OR category LIKE '%$term%' OR description LIKE '%$term%'");
     
-    if (!$result) { // add this check.
-        die('Invalid query: ' . mysql_error());
-        echo "No results found, please refine your search.";
+    if ( mysql_num_rows($result) == 0) { // add this check.
+        ?> <h3>No results found for your search, sowwie</h3> <?php
+        die();
     }
+    
+    ?> <h3>Results for your search of <?php echo $term; ?>:</h3> <?php
+
     echo "<br><br>";
     //fetch tha data from the database 
     while ($row = mysql_fetch_array($result)): 

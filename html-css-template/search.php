@@ -16,10 +16,13 @@
 	</header>
 	<article class="search container">
 		<div class="group">
-			<div class="col s4">
-				
+			<div class="col s4 control">
+				<div>
+					<p>Here should go filters</p>
+					<p>Imagine the wonderfully underlying form to implement this</p>
+				</div>
 			</div>
-			<div class="col s8">
+			<div class="col s8 result">
 				<?php include('databaseFunct/search.php'); ?>
 			</div>
 		</div>

@@ -461,6 +461,30 @@ nav {
   text-align: left; }
 
 /*******************************************************************************
+	Search
+*******************************************************************************/
+.search .control {
+  margin: 1rem 0;
+  border-right: 1px solid #abd0f8; }
+  .search .control div {
+    padding-right: 1rem; }
+.search .result h3 {
+  text-align: left;
+  margin: 1rem 0 2rem 1rem; }
+.search .result .item:after {
+  content: "";
+  display: block;
+  clear: both; }
+.search .result .item:not(:first-of-type):before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8;
+  width: 80%; }
+
+/*******************************************************************************
 	About us
 *******************************************************************************/
 #about-us #about h3:after {

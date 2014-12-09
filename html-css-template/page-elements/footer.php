@@ -30,4 +30,3 @@
 		</div>
 		<img class="logo" src="img/logo.png" alt="Spamazon Logo">
 		<p class="desktop">&copy; <?php echo date('Y'); ?> <a href="http://www.tom-maxwell.com">Thomas Maxwell</a>, Craig Morrison, Stewart Key, Aidan O'Grady, Chloe Forsyth</p>
-		<p class="mobile">&copy; <?php echo date('Y'); ?> <a href="#">The people involved</a></p>

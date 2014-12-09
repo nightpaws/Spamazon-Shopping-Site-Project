@@ -1,19 +1,23 @@
 <?php
-	//The land of variables
-	$page_type = "account-man";
-	$page_title = "Register";	//What is displayed As the page title in the browser
-	$page_description = "The registration page for Spamazon" //The page description
-?>
+//The land of variables
+$page_type        = "account-man";
+$page_title       = "Register"; //What is displayed As the page title in the browser
+$page_description = "The registration page for Spamazon" //The page description
+    ?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-	<?php  	include ('page-elements/head.php'); ?>
+	<?php
+include('page-elements/head.php');
+?>
 </head>
 <body>
 	<header>
-		<?php include('page-elements/header.php'); ?>
+		<?php
+include('page-elements/header.php');
+?>
 	</header>
 	<article id="reg">
 		<h1 class="page-header">Registration</h1>
@@ -77,7 +81,9 @@
 		</div>
 	</article>
 	<footer>
-		<?php include('page-elements/footer.php'); ?>
+		<?php
+include('page-elements/footer.php');
+?>
 	</footer>
 </body>
 <script type="text/javascript" src="./js/registerValidation.js"></script>

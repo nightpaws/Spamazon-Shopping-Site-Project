@@ -16,43 +16,45 @@
 		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article class="home">
-		<div class="flexslider">
-			<ul class="slides">
-				<li>
-					<div class="slide welcome">
-						<h2>Hello and Welcome to</h2>
-						<h1>Spamazon</h1>
-						<p>We hope you love our products as much as we are meant to</p>
-						<h3>If you register we promise to send you a sensible amount of mail</h3>
-					</div>
-				</li>
-				<li>
-					<div class="slide christmas">
-						<div>
-							<h2>Looking for our</h2>
-							<h1>Christmas</h1> 
-							<h2>stuff?</h2>
+		<div id="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="slide welcome">
+							<h2>Hello and Welcome to</h2>
+							<h1>Spamazon</h1>
+							<p>We hope you love our products as much as we are meant to</p>
+							<h3>If you register we promise to send you a sensible amount of mail</h3>
 						</div>
-						<div>
-							<h2>Well we don't have any, bah humbug</h2>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="slide men">
-						<a href="mens.php">
+					</li>
+					<li>
+						<div class="slide christmas">
 							<div>
-								<h2>Are you a </h2>
-								<h1>Man?</h1>
+								<h2>Looking for our</h2>
+								<h1>Christmas</h1> 
+								<h2>stuff?</h2>
 							</div>
 							<div>
-								<h2>Then visit our overpriced mens section</h2>
-								<h3>It has clothes but for men . . . </h3>
+								<h2>Well we don't have any, bah humbug</h2>
 							</div>
-						</a>
-					</div>
-				</li>
-			</ul>
+						</div>
+					</li>
+					<li>
+						<div class="slide men">
+							<a href="mens.php">
+								<div>
+									<h2>Are you a </h2>
+									<h1>Man?</h1>
+								</div>
+								<div>
+									<h2>Then visit our overpriced mens section</h2>
+									<h3>It has clothes but for men . . . </h3>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="group todays-deals l-content">
 			<div class="deal-header">

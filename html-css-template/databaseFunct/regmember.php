@@ -18,21 +18,24 @@ echo "Connected to MySQL<br>";
 $selected = mysql_select_db("hwb12179", $dbhandle) or die("Could not select examples");
 
 //execute the SQL query and return records
-$dob = STR_TO_DATE('$dob', '%m/%d/%Y');
-if ($passwd == $passwordC && $dob != null || $dob != '') {
-    //DOB IN UK IS DD-MM-YYYY
-    //DB NEEDS YYYY-MM-DD
-    $result = mysql_query("INSERT INTO 'cs312_user'('email', 'fname', 'sname', 'dob', 'password')
-	 VALUES ('$email','$firstname','$surname','$dob','$passwd');");
+if ($passwd == $passwdC && $dob != null || $dob != '') {
+	//Database uses DB formatted date. STR_TO_DATE converts from d-m-y to y-m-d
+    $sql = "INSERT INTO cs312_user(email, fname, sname, dob, password)
+	 VALUES ('$email','$firstname','$surname',STR_TO_DATE('$dob','%d-%m-%Y'),'$passwd');";
+    echo $sql;
 } else {
-    echo "Something went wrong with the database insertion. " . die();
+    echo "Data values are incorrectly formatted." . die();
 }
 
-//fetch tha data from the database 
-while ($row = mysql_fetch_array($result)) {
-    echo "ID:" . $row{'email'} . " First Name:" . $row{'fname'} . "Surname: " . //display the results
-        $row{'sname'} . "Date of Birth:" . $row{'dob'} . "Password:" . $row{'password'} . "<br>";
+// Execute the query
+if (!mysql_query($sql)) {
+    die("An unexpected error has occurred!");
 }
-//close the connection
+
 mysql_close($dbhandle);
+
+sleep(3);
+header("Location: ../registerConfirmation.php");
+die();
+//close the connection
 ?>

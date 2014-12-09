@@ -19,12 +19,15 @@ $selected = mysql_select_db("hwb12179", $dbhandle) or die("Could not select exam
 
 //execute the SQL query and return records
 if ($passwd == $passwdC && $dob != null || $dob != '') {
-	//Database uses DB formatted date. STR_TO_DATE converts from d-m-y to y-m-d
-    $sql = "INSERT INTO cs312_user(email, fname, sname, dob, password)
+    if (strtotime($dob) < strtotime(date("d-m-Y"))) {
+        //Database uses DB formatted date. STR_TO_DATE converts from d-m-y to y-m-d
+        $sql = "INSERT INTO cs312_user(email, fname, sname, dob, password)
 	 VALUES ('$email','$firstname','$surname',STR_TO_DATE('$dob','%d-%m-%Y'),'$passwd');";
-    echo $sql;
+    } else {
+       die("Date of birth cannot be in the future!");
+    }
 } else {
-    echo "Data values are incorrectly formatted." . die();
+   die("Data values are incorrectly formatted.");
 }
 
 // Execute the query
@@ -32,10 +35,10 @@ if (!mysql_query($sql)) {
     die("An unexpected error has occurred!");
 }
 
+//close the connection
 mysql_close($dbhandle);
 
 sleep(3);
 header("Location: ../registerConfirmation.php");
 die();
-//close the connection
 ?>

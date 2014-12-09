@@ -165,3 +165,43 @@
 		padding-left: 1rem;
 	}
 }
+
+/*******************************************************************************
+	Product extralarge
+*******************************************************************************/
+.product-extralarge{
+	height: 20rem;
+	overflow: hidden;
+
+	a{
+		color: black;
+	}
+
+	img{
+		width: 17rem;
+		height: 17rem;
+		float: left;
+		margin: 0.8rem 0 0 12rem;
+	}
+
+	.product-info{
+		float: right;	
+		margin-right: 12rem;
+		hgroup{
+			margin-top: 2rem;
+		}
+	}
+}
+
+.reversed{
+	img{
+		margin: 0.8rem 12rem 0 0;
+		float: right;
+	}
+
+	.product-info{
+		float: left;
+		margin-left: 12rem;
+		margin-right: 0;
+	}
+}

@@ -10,9 +10,9 @@
 				<ul>
 					<li><a href="index.php">Home</a></li>
 					<li>
-						<a href="#" aria-haspopup="true">Mens</a>
+						<a href="mens.php" aria-haspopup="true">Mens</a>
 						<ul>
-							<li class="mobile"><a href="#">Mens home</a></li>
+							<li class="mobile"><a href="mens.php">Mens home</a></li>
 							<li><a href="#">Top</a></li>
 							<li><a href="#">Bottom</a></li>
 							<li><a href="#">Shoe</a></li>
@@ -20,7 +20,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" aria-haspopup="true">Womans</a>
+						<a href="womans.php" aria-haspopup="true">Womans</a>
 						<ul>
 							<li><a href="#">Top</a></li>
 							<li><a href="#">Bottom</a></li>
@@ -29,7 +29,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#" aria-haspopup="true">Kids</a>
+						<a href="kids.php" aria-haspopup="true">Kids</a>
 						<ul>
 							<li><a href="#">Top</a></li>
 							<li><a href="#">Bottom</a></li>

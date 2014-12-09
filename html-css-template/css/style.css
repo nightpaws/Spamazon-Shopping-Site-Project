@@ -16,7 +16,8 @@
 	Global stuff
 *******************************************************************************/
 body {
-  font-family: "Open sans", sans-serif; }
+  font-family: "Open sans", sans-serif;
+  overflow-x: hidden; }
 
 .content {
   width: 960px;
@@ -457,8 +458,39 @@ nav {
   display: block;
   clear: both; }
 
-.suggested-items h2 {
-  text-align: left; }
+.suggested-items {
+  overflow: hidden; }
+  .suggested-items h2 {
+    text-align: left; }
+
+/*******************************************************************************
+	Mens Page
+*******************************************************************************/
+.links {
+  margin: 1rem 0;
+  font-size: 1.5rem; }
+  .links li {
+    margin: 1rem 0; }
+
+.mens #slider {
+  border-left: 1px solid #abd0f8; }
+.mens .cats:before {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background: #abd0f8; }
+.mens .cats {
+  margin-bottom: 0; }
+  .mens .cats ul {
+    margin: auto; }
+  .mens .cats li {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0; }
 
 /*******************************************************************************
 	Search
@@ -522,7 +554,7 @@ nav {
   text-align: center; }
 
 /*******************************************************************************
-	Log in / Register
+	Log in / RegPister
 *******************************************************************************/
 h1 {
   text-align: center;
@@ -899,6 +931,33 @@ h1 {
     margin: 1rem 0; }
   .product-large td:last-of-type {
     padding-left: 1rem; }
+
+/*******************************************************************************
+	Product extralarge
+*******************************************************************************/
+.product-extralarge {
+  height: 20rem;
+  overflow: hidden; }
+  .product-extralarge a {
+    color: black; }
+  .product-extralarge img {
+    width: 17rem;
+    height: 17rem;
+    float: left;
+    margin: 0.8rem 0 0 12rem; }
+  .product-extralarge .product-info {
+    float: right;
+    margin-right: 12rem; }
+    .product-extralarge .product-info hgroup {
+      margin-top: 2rem; }
+
+.reversed img {
+  margin: 0.8rem 12rem 0 0;
+  float: right; }
+.reversed .product-info {
+  float: left;
+  margin-left: 12rem;
+  margin-right: 0; }
 
 /*******************************************************************************
 	Review

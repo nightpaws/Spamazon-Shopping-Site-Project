@@ -5,7 +5,12 @@ This list is a list of the pages that are done, complete, final and shall never 
 ##The List##
 
 
+* about.php
+* close-account.php
 * Index.php
+* policies.php
+* returns.php
+* 404.php
 
 ###Header/Footer
 

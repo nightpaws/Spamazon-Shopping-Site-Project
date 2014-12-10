@@ -1,8 +1,8 @@
 <?php
 //The land of variables
 $page_type        = "account-man";
-$page_title       = "Register"; //What is displayed As the page title in the browser
-$page_description = "The registration page for Spamazon" //The page description
+$page_title       = "Failed Login"; //What is displayed As the page title in the browser
+$page_description = "The login page for Spamazon" //The page description
  ?>
 
 
@@ -19,13 +19,13 @@ include('page-elements/head.php');
 include('page-elements/header.php');
 ?>
   </header>
-  <body onLoad="setTimeout('indexRedirect()', 3000)">
+  <body onLoad="setTimeout('loginRedirect()', 3000)">
 
     <h1>
-      Thank you for registering with Spamazon!
+      The username/password combination you entered was incorrect
     </h1>
     <h2>
-      You will be redirected to the home page in a few seconds
+      You will be redirected to the login page in a few seconds
     </h2>
   <footer>
     <?php

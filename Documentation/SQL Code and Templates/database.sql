@@ -10,11 +10,10 @@ CREATE TABLE cs312_payment (
   cardNo)) ENGINE=InnoDB;
 CREATE TABLE cs312_stock (
   name        varchar(255) NOT NULL, 
-  `size`      char(1) NOT NULL, 
+  `size`      char(6) NOT NULL, 
   colour      varchar(20) NOT NULL, 
   description text, 
   category    varchar(255) NOT NULL, 
-  Gender      char(1), 
   quantity    int(10) NOT NULL, 
   price       decimal(10, 2) NOT NULL, 
   image       varchar(255), 
@@ -24,7 +23,7 @@ CREATE TABLE cs312_stock (
 CREATE TABLE cs312_orderItem (
   cs312_orderId     bigint(19) NOT NULL, 
   cs312_stockname   varchar(255) NOT NULL, 
-  cs312_stocksize   char(1) NOT NULL, 
+  cs312_stocksize   char(6) NOT NULL, 
   cs312_stockcolour varchar(20) NOT NULL, 
   quantityOrdered   int(10) NOT NULL, 
   PRIMARY KEY (cs312_orderId, 

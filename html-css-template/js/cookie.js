@@ -1,5 +1,5 @@
 function read(){
-  alert(readCookie('user'));
+  alert(readCookie('spamaznauth'));
 }
 function readCookie(name) {
     var nameEQ = name + "=";
@@ -13,18 +13,34 @@ function readCookie(name) {
 }
 
 function addItem(){
-  // var x = document.cookie;
   // //These should be created using however the items are displayed, eg sql query or from domain name etc.
-  // var productName = "itemName";
-  // var productSize = "itemSize";
-  // var productColour = "itemColour";
-  // var item = {name:"itemName", size:productSize, colour:productColour};
-  // // var name = item.name();
-  // var currentBasket = readCookie('basket');
-  // currentBasket[currentBasket.length] = item;
-  var expires = getTime()+(5*24*60*60*1000).toUTCString();
-  document.write(expires);
-  // document.cookie = "basket=currentBasket;"+expires;
+  var name = "spamaznbsk";
+
+  var productName = "itemName";
+  var productSize = "itemSize";
+  var productColour = "itemColour";
+  var item = {name:productName, size:productSize, colour:productColour};
+  var item2 = {name:"t-shirt", size:"L", colour:"Blue"};
+  var currentBasket = [];
+
+  //If user already has items in their cart
+  //save them
+  if(readCookie(name)!=null){
+    currentBasket= readCookie(name);
+  }
+  //add these items to the basket
+  currentBasket.push(item);
+  currentBasket.push(item2);
+  var cookie = [name, '=', JSON.stringify(currentBasket), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
+  document.cookie = cookie;
+
+}
+function readBasket(){
+  var name = "spamaznbsk";
+  var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
+  result && (result = JSON.parse(result[1]));
+
+  alert(result[1].colour);
 }
 
 function addItemNotification(){

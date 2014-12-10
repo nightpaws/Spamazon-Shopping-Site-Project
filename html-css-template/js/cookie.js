@@ -14,6 +14,8 @@ function readCookie(name) {
 
 function addItem(){
   // //These should be created using however the items are displayed, eg sql query or from domain name etc.
+  var name = "spamaznbsk";
+
   var productName = "itemName";
   var productSize = "itemSize";
   var productColour = "itemColour";
@@ -21,20 +23,20 @@ function addItem(){
   var item2 = {name:"t-shirt", size:"L", colour:"Blue"};
   var currentBasket = [];
 
-  //If user has nothing in their basket
-  if(readCookie('basket')==null){
-    currentBasket= readCookie('basket');
-    document.cookie="basket=currentBasket";
+  //If user already has items in their cart
+  //save them
+  if(readCookie(name)!=null){
+    currentBasket= readCookie(name);
   }
   //add these items to the basket
   currentBasket.push(item);
   currentBasket.push(item2);
+  var cookie = [name, '=', JSON.stringify(currentBasket), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
+  document.cookie = cookie;
 
 }
 function readBasket(){
-  var name = "basket";
-  var cookie = [name, '=', JSON.stringify(currentBasket), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
-  document.cookie = cookie;
+  var name = "spamaznbsk";
   var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
   result && (result = JSON.parse(result[1]));
 

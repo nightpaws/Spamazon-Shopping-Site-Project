@@ -1,10 +1,6 @@
 <?php
 
 include('databaseconnection.php');
-
-$username = "hwb12179";
-$password = "gichstsu";
-$hostname = "devweb2014.cis.strath.ac.uk";
 $database = "hwb12179";
 $cookie_name = "spamaznauth"; //to be added
 
@@ -20,7 +16,7 @@ if(!isset($_COOKIE[$cookie_name])) {
 //create the SQL query
   //get orders which match user and delete
 $sqlorderItem = "DELETE FROM cs312_orderItem 
-  WHERE cs312_orderId IN (SELECT Id from cs312_OrderItem WHERE cs312_useremail = $email);";
+  WHERE cs312_orderId IN (SELECT Id from cs312_order WHERE cs312_useremail = '$email');";
   //then delete the rest in reverse order
 $sqlorder = "DELETE FROM cs312_order 
   WHERE cs312_useremail = '$email';";
@@ -30,8 +26,17 @@ $sqlpayment = "DELETE FROM cs312_payment
   WHERE email = '$email';";
 
 //execute the SQL query
-if (!mysql_query($sql)) {
-    die("An unexpected error has occurred!");
+if (!mysql_query($sqlorderItem)) {
+    die("Error deleting order item!");
+}
+if (!mysql_query($sqlorder)) {
+    die("Error deleting order!");
+}
+if (!mysql_query($sqlpayment)) {
+    die("Error deleting payment info!");
+}
+if (!mysql_query($sqluser)) {
+    die("Error deleting user!");
 }
 //close the connection
 mysql_close($dbhandle);
@@ -41,11 +46,12 @@ if(!isset($_COOKIE[$cookie_name])) {
     echo "Cookie named '" . $cookie_name . "' is not set!";
 }else{ 
 setcookie("$cookie_name", "", time() - 3600);
+session_destroy(); 
 }
 
 //respond to user with success notice
 echo("Your account has been successfully deleted..");
-header( 'Location: /closeConfirmation.php' ) ;
+header( 'Location: ../closeConfirmation.php' ) ;
 
 die();
 ?>

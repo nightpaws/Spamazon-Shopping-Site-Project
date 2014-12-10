@@ -1,5 +1,5 @@
 function read(){
-  alert(readCookie('user'));
+  alert(readCookie('spamaznauth'));
 }
 function readCookie(name) {
     var nameEQ = name + "=";

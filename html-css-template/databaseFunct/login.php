@@ -30,7 +30,7 @@
 	$count=mysql_num_rows($result);
   if($count==1){
 		echo "login complete";
-		$cookieName = 'user';
+		$cookieName = 'spamaznauth';
 		setcookie($cookieName, $user, time() + (86400 * 30), "/");
 		echo $_COOKIE[$cookieName];
 		// session_start();

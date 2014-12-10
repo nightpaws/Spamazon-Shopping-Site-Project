@@ -462,6 +462,8 @@ nav {
   overflow: hidden; }
   .suggested-items h2 {
     text-align: left; }
+  .suggested-items .item:not(:last-of-type) {
+    border-right: 1px solid #abd0f8; }
 
 /*******************************************************************************
 	Sub home Page

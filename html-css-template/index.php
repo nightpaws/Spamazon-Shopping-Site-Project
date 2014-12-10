@@ -62,13 +62,13 @@
 				<h3> - 100% guaranteed to be at full price, no matter what!</h3>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/index-sale.php'); ?>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/index-sale.php'); ?>
 			</div>
 			<div class="col s4 procuct">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/index-sale.php'); ?>
 			</div>
 		</div>
 		<div class="suggested-items l-content">

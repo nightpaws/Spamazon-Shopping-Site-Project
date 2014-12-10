@@ -2,6 +2,6 @@
 <a href="#" title="Hide navigation">Hide navigation<span class="nav-icon user-icon"></a>
 <ul>
 	<li>
-		<a href="login.php">Log in</a>
+		<a href="login.php">Log in/Register</a>
 	</li>
 </ul>

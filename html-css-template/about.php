@@ -65,11 +65,11 @@
 				</li>
 				<li>
 					<h3>Stewart Key</h3>
-					<p>Done fuck all so far.</p>
+					<p>User input validation, user login, and session storage</p>
 					<ul>
 						<li><a class="github" href="https://github.com/Epailes">GitHub: Epailes</a></li>
 					</ul>
-					
+
 				</li>
 				<li>
 					<h3>Aidan O'Grady</h3>

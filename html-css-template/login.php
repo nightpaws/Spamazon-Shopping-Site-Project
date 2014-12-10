@@ -29,6 +29,6 @@
 	<footer>
 		<?php include('page-elements/footer.php'); ?>
 	</footer>
+	<script type="text/javascript" src="./js/loginValidation.js"></script>
 </body>
-<script type="text/javascript" src="./js/loginValidation.js"></script>
 </html>

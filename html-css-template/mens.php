@@ -15,7 +15,7 @@
 	<header>
 		<?php include('page-elements/header.php'); ?>
 	</header>
-	<article class="home mens">
+	<article class="home subhome">
 		<div class="group">
 			<div id="slider">
 				<div class="flexslider">

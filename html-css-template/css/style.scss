@@ -66,82 +66,24 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 @import "_home.scss";
 
 /*******************************************************************************
-	Mens Page
+	Sub home Page
 *******************************************************************************/
 
-.links{
-	margin: 1rem 0;
-	font-size: 1.5rem;
+@import "_subhome.scss";
 
-	li{
-		margin: 1rem 0;
-	}
-}
+/*******************************************************************************
+	Category page
+*******************************************************************************/
 
-.mens{
-	#slider{
-		border-left: 1px solid $lightblue;
-	}
+@import "_catpage.scss";
 
-		.cats:before{
-			@include horizontal-break-line($lightblue, 1px);
-		}
 
-	.cats{
-
-		a:visited{
-			color: $blue;
-		}
-
-		margin-bottom: 0;
-
-		ul{
-			margin: auto;
-		}
-
-		li{
-			display: inline-block;
-			width: 24.5%;
-			text-align: center;
-			font-size: 1.5rem;
-			margin: 1rem 0;
-		}
-	}
-}
 
 /*******************************************************************************
 	Search
 *******************************************************************************/
 
-.search{
-	.control{
-		margin: 1rem 0;
-		border-right: 1px solid $lightblue;
-		div{
-			padding-right: 1rem
-		}
-	}
-
-	.result{
-
-		h3{
-			text-align: left;
-			margin: 1rem 0 2rem 1rem;
-		}
-
-		.item:after{
-			content: "";
-			display: block;
-			clear: both;
-		}
-
-		.item:not(:first-of-type):before{
-			@include horizontal-break-line($lightblue, 1px);
-			width: 80%;
-		}
-
-	}
-}
+@import "_search.scss";
 
 /*******************************************************************************
 	About us
@@ -159,89 +101,8 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 	Account Management
 *******************************************************************************/
 
-#account-man{
-	.group:nth-child(n + 2):before{
-		@include horizontal-break-line($lightblue, 1px);
-	}
+@import "_accman.scss";
 
-	.group{
-		> div:not(:last-of-type){
-			border-right: solid 1px $lightblue;
-			height: 100%;
-		}
-	}
-
-	.order, .details{
-		margin: 0.2rem 1rem;
-		span{
-			float: right;
-		}
-	}
-
-	.danger-zone{
-		width: 71.87500rem;
-		margin: auto;
-
-		.a-button{
-			width: 66%;
-			display: block;
-			margin: auto;
-			margin-top: 1rem;
-			background-color: #DF3E3E;
-			@include transition-duration(0.2s);
-		}
-
-		.a-button:hover{
-			background-color: lighten(#DF3E3E, 10%);
-		}
-	}
-}
-
-#account-man-close{
-	p{
-		text-align: center;
-	}
-
-	button{
-		background-color: #DF3E3E;
-		display: block;
-		width: 66%;
-		margin: auto;
-		margin-top: 1rem;
-		@include transition-duration(0.2s);
-	}
-
-	button:hover{
-		background-color: lighten(#DF3E3E, 10%);
-	}
-}
-
-#account-man-pass-change, #account-man-email-change{
-
-	form, table, button{
-		margin: auto;
-	}
-
-	h2{
-		margin: 2rem 0 3rem 0;
-	}
-
-	button{
-		display: block;
-		width: 40%;
-		margin-top: 2rem;
-	}
-
-	tr{
-		>td label{
-			width: 15rem;
-		}
-	}
-
-	#current-pass{
-		margin-bottom: 1rem;
-	}
-}
 
 /*******************************************************************************
 	Checkout
@@ -253,24 +114,7 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 	View Order page
 *******************************************************************************/
 
-#view-order{
-	h3{
-		padding: 1rem 0 0.5rem 0;
-	}
-	#product::before{
-		@include horizontal-break-line($lightblue, 1px);
-	}
-	#payment::before{
-		@include horizontal-break-line($lightblue, 1px);
-	}
-	#address::before{
-		@include horizontal-break-line($lightblue, 1px);
-	}
-
-	.product-details{
-		display: none;
-	}
-}
+@import "_vieworder.scss";
 
 
 /*******************************************************************************

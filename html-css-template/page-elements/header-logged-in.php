@@ -4,7 +4,7 @@
 	<li>
 		<a href="account-man.php">EMAIL HERE</a>
 		<ul>
-			<li>Log out</li>
+			<li><a href='index.php?logout=true'>Log Out</a></li>
 		</ul>
 	</li>
 </ul>

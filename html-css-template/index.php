@@ -4,7 +4,18 @@
 	$page_title = "Home Page";	//What is displayed As the page title in the browser
 	$page_description = "Welcome to Spamazon the home of highish quality clothing" //The page description
 ?>
+<?php
+function logout(){
+$cookie_name = "spamaznauth";
+setcookie("$cookie_name", "", time() - 3600,"/");
+session_destroy(); 
+header( 'Location: ./index.php' ) ;
+}
+if (isset($_GET['logout'])) {
+    logout();
+  }
 
+?>
 
 <!DOCTYPE html>
 <html>

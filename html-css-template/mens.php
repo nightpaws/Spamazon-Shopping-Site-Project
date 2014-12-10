@@ -41,10 +41,12 @@
 							</div>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge.php"); ?>
+							<?php $reversed = false; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge-reversed.php"); ?>
+							<?php $reversed = true; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
 						</li>
 					</ul>
 				</div>
@@ -52,48 +54,34 @@
 		</div>
 		<div class="group l-content cats">
 			<ul>
-				<li><a href="#">Tops</a></li>
-				<li><a href="#">Bottoms</a></li>
-				<li><a href="#">Shoes</a></li>
-				<li><a href="#">Other Stuff</a></li>
+				<li><a href="category.php?cat=mens-tops">Tops</a></li>
+				<li><a href="category.php?cat=mens-bottoms">Bottoms</a></li>
+				<li><a href="category.php?cat=mens-shoes">Shoes</a></li>
+				<li><a href="category.php?cat=mens-other">Other Stuff</a></li>
 			</ul>
 		</div>
 		<div class="group todays-deals l-content">
+
+			<?php $cat = "mens"; ?>
+			
 			<div class="deal-header">
 				<h2>Todays Deals:</h2>
 				<h3> - 100% guaranteed to be at full price, no matter what!</h3>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 procuct">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 		</div>
 		<div class="suggested-items l-content">
 			<h2>Based on your browsing:</h2>
 			<div class="items">
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
+				<?php include('databaseFunct/reccommend.php'); ?>
 			</div>
 	</article>
 	<footer>

@@ -26,8 +26,12 @@ function addItem(){
     currentBasket= readCookie('basket');
     document.cookie="basket=currentBasket";
   }
+  //add these items to the basket
   currentBasket.push(item);
   currentBasket.push(item2);
+
+}
+function readBasket(){
   var name = "basket";
   var cookie = [name, '=', JSON.stringify(currentBasket), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
   document.cookie = cookie;

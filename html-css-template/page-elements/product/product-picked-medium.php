@@ -1,5 +1,5 @@
 <div class="product-picked-medium product-medium">
-	<a href="product-page.php">
+	<a href="#">
 	<img src="#" alt="Product image">
 	<div class="product-info">
 		<h4>Product Name</h4>

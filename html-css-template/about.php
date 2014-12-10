@@ -73,7 +73,7 @@
 				</li>
 				<li>
 					<h3>Aidan O'Grady</h3>
-					<p>Done fuck all so far.</p>
+					<p>Oversaw the PHP for Product Pages, Searching and Checkout Systems.</br></p>
 					<ul>
 						<li><a class="github" href="https://github.com/ANuclearError">GitHub: ANuclearError</a></li>
 					</ul>

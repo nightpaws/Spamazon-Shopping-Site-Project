@@ -3,8 +3,6 @@
     $password = "gichstsu";
     $hostname = "devweb2014.cis.strath.ac.uk"; 
 
-    $item = $_GET["item"];
-
     //connection to the database
     $dbhandle = mysql_connect($hostname, $username, $password) 
     or die("Unable to connect to MySQL");
@@ -14,15 +12,16 @@
     or die("Could not select examples");
 
     //execute the SQL query and return records
-    $result = mysql_query("SELECT * FROM cs312_stock WHERE name LIKE '%$item%' LIMIT 1;");
+    $result = mysql_query("SELECT * FROM cs312_stock WHERE name LIKE '%%' ORDER BY rand() LIMIT 4");
     
     if (!$result) { // add this check.
-        ?> <h3>Product not found, sorry about that.</h3> <?php
+        echo "No reccommendations. Please browse our site to allow us to do so.";
         die();
     }
+    
 
     //fetch tha data from the database 
-    while ($row = mysql_fetch_array($result)){
+    while($row = mysql_fetch_array($result)):
 
         $name = $row{"name"};
         $size = $row{"size"};
@@ -32,8 +31,14 @@
         $quantity = $row{"quantity"}; 
         $price = $row{"price"};
         $image = $row{"image"};
-    }
 
+        ?>
+
+        <div class="item">
+            <?php include('page-elements/product/product-small.php');?>
+        </div>
+
+    <?php endwhile;
     //close the connection
     mysql_close($dbhandle);
 ?>

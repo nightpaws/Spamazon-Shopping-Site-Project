@@ -4,7 +4,7 @@
     $term = $_GET["term"];
     //execute the SQL query and return records
     $result = mysql_query("SELECT * FROM cs312_stock WHERE name LIKE '%$term%'
-        OR category LIKE '%$term%' OR description LIKE '%$term%'");
+        OR category LIKE '%$term%' OR description LIKE '%$term%' GROUP BY(name)");
     
     if ( mysql_num_rows($result) == 0) { // add this check.
         ?> <h3>No results found for your search, sowwie</h3> <?php

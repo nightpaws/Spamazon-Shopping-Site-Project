@@ -74,24 +74,7 @@
 		<div class="suggested-items l-content">
 			<h2>Based on your browsing:</h2>
 			<div class="items">
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
+				<?php include('databaseFunct/reccommend.php'); ?>
 			</div>
 	</article>
 	<footer>

@@ -4,12 +4,7 @@ $page_type        = "account-man";
 $page_title       = "Register"; //What is displayed As the page title in the browser
 $page_description = "The registration page for Spamazon" //The page description
  ?>
- 
-<script type="text/javascript">
-function delayedRedirect(){
-    window.location = "./index.php"
-}
-</script>
+
 
 <!DOCTYPE html>
 <html>
@@ -37,5 +32,6 @@ include('page-elements/header.php');
 include('page-elements/footer.php');
 ?>
   </footer>
+  <script type="text/javascript" src="./js/loginValidation.js"></script>
 </body>
 </html>

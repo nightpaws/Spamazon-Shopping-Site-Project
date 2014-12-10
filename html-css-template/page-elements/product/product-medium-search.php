@@ -1,7 +1,7 @@
 <div class="product-medium-search product-medium">
-	<a href="product-page.php">
+	<a href=<?php echo "product-page.php?item=".str_replace(" ", "+", $name);?>>
 		<div class="img">
-			<img src="<?php echo $image; ?>" alt="Product image">
+			<img src="<?php echo $image; ?>" alt="Product Image">
 		</div>
 		<div class="product-info">
 			<h4><?php echo $name;?></h4>

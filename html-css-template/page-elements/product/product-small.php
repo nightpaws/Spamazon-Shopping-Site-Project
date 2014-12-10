@@ -1,9 +1,9 @@
 <div class="product-small">
 	<a href="#">
-	<img src="#" alt="Product image">
+	<img src="<?php echo $image; ?>" alt="Product Image">
 	<div class="product-info">
-		<h4>Product Name</h4>
-		<p> £5.31</p>
+		<z><?php echo $name ?></h4>
+		<p><?php echo "£".$price;?></p>
 	</div>
 	</a>
 	<div></div>

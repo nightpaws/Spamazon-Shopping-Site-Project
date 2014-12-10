@@ -57,24 +57,7 @@
 		<div class="suggested-items">
 			<h3>You might also love to wear:</h3>
 			<div class="items">
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
+				<?php include('databaseFunct/findSimilar.php');?>
 			</div>
 		</div>
 		<div class="reviews">

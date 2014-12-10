@@ -22,7 +22,7 @@
 	</div>
 	<div class="product-details">
 		<p><?php echo $description;?></p>
-		<h3>Details</h3>
+		<!-- <h3>Details</h3>
 		<table>
 			<tr>
 				<td>Materials:</td>
@@ -36,6 +36,6 @@
 				<td>Slave Labour?:</td>
 				<td>Ha of course!</td>
 			</tr>
-		</table>
+		</table> -->
 	</div>
 </div>

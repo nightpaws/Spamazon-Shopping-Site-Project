@@ -75,6 +75,7 @@
 					<h3>Aidan O'Grady</h3>
 					<p>Oversaw the PHP for Product Pages, Searching and Checkout Systems.</br></p>
 					<ul>
+						<li><a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#108;&#98;&#49;&#50;&#49;&#53;&#51;&#64;&#117;&#110;&#105;&#46;&#115;&#116;&#114;&#97;&#116;&#104;&#46;&#97;&#99;&#46;&#117;&#107;'>&#77;&#97;&#105;&#108;&#32;&#77;&#101;</a></li>
 						<li><a class="github" href="https://github.com/ANuclearError">GitHub: ANuclearError</a></li>
 					</ul>
 				</li>

@@ -44,10 +44,10 @@
 					<p>Oversaw the front end design and development of Spamazon.</p>
 					<ul>
 						<li><a class="website" href="http://tom-maxwell.com">tom-maxwell.com</a></li>
-						<li><a class="email"> Email Address Goes Here<?php //hello@tom-maxwell.com ?></a></li>
+						<li><a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#116;&#111;&#109;&#45;&#109;&#97;&#120;&#119;&#101;&#108;&#108;&#46;&#99;&#111;&#109;'>&#77;&#97;&#105;&#108;&#32;&#77;&#101;</a></li>
 						<li><a class="twitter" href="https://twitter.com/confuddledpengu">@confuddledpengu</a></li>
 						<li><a class="github" href="https://github.com/ConfuddledPenguin">GitHub: ConfuddledPenguin</a></li>
-						<?php //can do linkedin with the class of linkedin ?>
+						<li><a class="linkedin" href="https://www.linkedin.com/pub/thomas-maxwell/83/a43/709">LinkedIn</a></li>
 					</ul>
 				</li>
 				<li>
@@ -57,7 +57,7 @@
 					Designed the site logo.</p>
 					<ul>
 						<li><a class="website" href="http://nightpaws.eu">nightpaws.eu</a></li>
-						<li><a class="email"> Email Address Goes Here <?php //admin@nightpaws.eu ?></a></li>
+						<li><a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#109;&#105;&#110;&#64;&#110;&#105;&#103;&#104;&#116;&#112;&#97;&#119;&#115;&#46;&#101;&#117;'>&#77;&#97;&#105;&#108;&#32;&#77;&#101;</a></li>
 						<li><a class="twitter" href="https://twitter.com/nightpaws">@nightpaws</a></li>
 						<li><a class="github" href="https://github.com/nightpaws">GitHub: Nightpaws</a></li>
 						<li><a class="linkedin" href="https://www.linkedin.com/in/craigmorrison1">LinkedIn</a></li>

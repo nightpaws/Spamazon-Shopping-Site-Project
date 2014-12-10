@@ -45,7 +45,7 @@ mysql_close($dbhandle);
 if(!isset($_COOKIE[$cookie_name])) {
     echo "Cookie named '" . $cookie_name . "' is not set!";
 }else{ 
-setcookie("$cookie_name", "", time() - 3600);
+setcookie("$cookie_name", "", time() - 3600,"/");
 session_destroy(); 
 }
 

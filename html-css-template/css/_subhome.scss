@@ -1,0 +1,39 @@
+.links{
+	margin: 1rem 0;
+	font-size: 1.5rem;
+
+	li{
+		margin: 1rem 0;
+	}
+}
+
+.subhome{
+	#slider{
+		border-left: 1px solid $lightblue;
+	}
+
+		.cats:before{
+			@include horizontal-break-line($lightblue, 1px);
+		}
+
+	.cats{
+
+		a:visited{
+			color: $blue;
+		}
+
+		margin-bottom: 0;
+
+		ul{
+			margin: auto;
+		}
+
+		li{
+			display: inline-block;
+			width: 24.5%;
+			text-align: center;
+			font-size: 1.5rem;
+			margin: 1rem 0;
+		}
+	}
+}

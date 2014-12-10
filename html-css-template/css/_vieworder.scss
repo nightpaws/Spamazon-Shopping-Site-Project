@@ -1,0 +1,18 @@
+#view-order{
+	h3{
+		padding: 1rem 0 0.5rem 0;
+	}
+	#product::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+	#payment::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+	#address::before{
+		@include horizontal-break-line($lightblue, 1px);
+	}
+
+	.product-details{
+		display: none;
+	}
+}

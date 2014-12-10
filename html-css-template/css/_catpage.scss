@@ -1,0 +1,36 @@
+.cat-page{
+
+	.results{
+		margin: 1rem 0 0 0;
+	}
+
+	.returned:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+
+	.product-small{
+		float: left;
+	}
+
+	.product-small:nth-child(2n){
+		margin-left: 5rem;
+	}
+
+	.product-small:nth-child(2n):after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+
+	.pagination{
+		margin-top: 2rem;
+		font-size: 1.5rem;
+		text-align: centre;
+
+		a:visited{
+			color: $blue;
+		}
+	}
+}

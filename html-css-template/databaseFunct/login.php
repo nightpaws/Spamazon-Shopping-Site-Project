@@ -36,7 +36,7 @@
 		// session_start();
 		// $_SESSION["user"] = $user;
 		// $_SESSION["pass"] = $pass;
-		//header("location:../index.php");
+		//header("location:../index.php"); uncomment this when finished, will redirect user to index
 	} else{
 		echo "We either have no user under that email\n
 		 			or the password is incorrect";

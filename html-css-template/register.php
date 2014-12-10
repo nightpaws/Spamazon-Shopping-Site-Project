@@ -85,6 +85,6 @@ include('page-elements/header.php');
 include('page-elements/footer.php');
 ?>
 	</footer>
+  <script type="text/javascript" src="./js/registerValidation.js"></script>
 </body>
-<script type="text/javascript" src="./js/registerValidation.js"></script>
 </html>

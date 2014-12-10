@@ -65,11 +65,11 @@
 				</li>
 				<li>
 					<h3>Stewart Key</h3>
-					<p>Done fuck all so far.</p>
+					<p>User input validation, user login, and session storage</p>
 					<ul>
 						<li><a class="github" href="https://github.com/Epailes">GitHub: Epailes</a></li>
 					</ul>
-					
+
 				</li>
 				<li>
 					<h3>Aidan O'Grady</h3>
@@ -80,7 +80,9 @@
 				</li>
 				<li>
 					<h3>Chloe Forsyth</h3>
-					<p>Done fuck all so far.</p>
+					<p>Helped to find some bugs/errors, wrote the report, helped with the database and ERD. </br>
+					Also helped to prioritise tasks and organise who was working on what. </br>
+					Programming was never a strong point for me but documentation and testing is.</p>
 					<ul>
 						<li><a class="github" href="https://github.com/pyrobunny">GitHub: pyrobunny</a></li>
 					</ul>

@@ -2,9 +2,6 @@
 <a href="#" title="Hide navigation">Hide navigation<span class="nav-icon user-icon"></a>
 <ul>
 	<li>
-		<a href="account-man.php">EMAIL HERE</a>
-		<ul>
-			<li>Log out</li>
-		</ul>
+		<a href="login.php">Log in</a>
 	</li>
 </ul>

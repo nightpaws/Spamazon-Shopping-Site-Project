@@ -6,7 +6,7 @@
 <body>
 
   <h1>My First Web Page</h1>
-  <button onclick="read()">Current user email</button>
+  <button onclick="addItem()">Current user email</button>
 
   <p>My first paragraph.</p>
 

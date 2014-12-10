@@ -13,18 +13,28 @@ function readCookie(name) {
 }
 
 function addItem(){
-  // var x = document.cookie;
   // //These should be created using however the items are displayed, eg sql query or from domain name etc.
-  // var productName = "itemName";
-  // var productSize = "itemSize";
-  // var productColour = "itemColour";
-  // var item = {name:"itemName", size:productSize, colour:productColour};
-  // // var name = item.name();
-  // var currentBasket = readCookie('basket');
-  // currentBasket[currentBasket.length] = item;
-  var expires = getTime()+(5*24*60*60*1000).toUTCString();
-  document.write(expires);
-  // document.cookie = "basket=currentBasket;"+expires;
+  var productName = "itemName";
+  var productSize = "itemSize";
+  var productColour = "itemColour";
+  var item = {name:productName, size:productSize, colour:productColour};
+  var item2 = {name:"t-shirt", size:"L", colour:"Blue"};
+  var currentBasket = [];
+
+  //If user has nothing in their basket
+  if(readCookie('basket')==null){
+    currentBasket= readCookie('basket');
+    document.cookie="basket=currentBasket";
+  }
+  currentBasket.push(item);
+  currentBasket.push(item2);
+  var name = "basket";
+  var cookie = [name, '=', JSON.stringify(currentBasket), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
+  document.cookie = cookie;
+  var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
+  result && (result = JSON.parse(result[1]));
+
+  alert(result[1].colour);
 }
 
 function addItemNotification(){

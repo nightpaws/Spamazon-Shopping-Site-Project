@@ -89,6 +89,10 @@ $cart-nav-width: $total - $main-nav-width -$user-nav-width - 1%;
 
 	.cats{
 
+		a:visited{
+			color: $blue;
+		}
+
 		margin-bottom: 0;
 
 		ul{

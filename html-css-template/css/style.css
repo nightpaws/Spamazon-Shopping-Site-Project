@@ -483,6 +483,8 @@ nav {
   background: #abd0f8; }
 .mens .cats {
   margin-bottom: 0; }
+  .mens .cats a:visited {
+    color: #4c9cf1; }
   .mens .cats ul {
     margin: auto; }
   .mens .cats li {

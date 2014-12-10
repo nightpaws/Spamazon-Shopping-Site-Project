@@ -1,0 +1,42 @@
+# Author: Tom Maxwell
+# email: gvb1282@uni.strath.ac.uk | hello@tom-maxwell.com
+#
+# This is the input file for the DBfiller for the CS312 - web project database
+# Inputing this file into the DBfiller will result in a sql file being generated
+# with SQL data injections for the stock table
+#
+# Usage:
+#
+# java -jar DBfiller.jar <input file>
+#
+# Where <input file> is a file formatted like this.
+#
+# The format that the data should be entered is:
+#
+# NAME,SIZES, COLOURS,DESCRIPTION,GENDER,MAINCAT,SUBCAT,NUMBER,PRICE,IMAGEURL
+#
+# Where:
+#
+# NAME: The product name
+# SIZES: An array of sizes
+# COLOURS: An array of colours
+# DESCRIPTION: the description
+# GENDER: mens, womans, kids
+# MAINCAT: top, bottom, shoes, stuff
+# SUBCAT: the sub cat
+# NUMBER: The stock count
+# PRICE: the product price
+# IMAGEURL: The url of the image
+#
+# Each product should be on a separate line. With no empty lines.
+#
+# The output file is called gererated.sql
+#
+# WARNING
+#
+# This was written quickly
+# If you use it wrong it will die horribly
+# Further more if you input crap you will get crap out
+#
+#
+NASTARDIS T-Shirt,XS.S.M.L.XL, Red.Blue.Purple.Green,Small Doctor Who and NASA themed T-Shirt. PARODY not licensed by the BBC or NASA.,mens,tops,tshirt,23,6.89,http://ecx.images-amazon.com/images/I/61W1F-O3yAL._UX385_.jpg

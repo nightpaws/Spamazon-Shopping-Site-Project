@@ -1,0 +1,6 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+ErrorDocument 404 /~hwb12179/WAD/group/404.php

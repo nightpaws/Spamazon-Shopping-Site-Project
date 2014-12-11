@@ -5,6 +5,11 @@ $page_title       = "Close Account"; //What is displayed As the page title in th
 $page_description = "Sorry you left us." //The page description
  ?>
 
+ <?php
+  //Check if the user is logged in
+  @include('php/logged-in.php');
+?>
+
 
 <!DOCTYPE html>
 <html>

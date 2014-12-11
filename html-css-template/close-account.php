@@ -5,6 +5,10 @@
 	$page_description = "While we are sorry to see you go, we don't understand, please don't leave us!" //The page description
 ?>
 
+<?php
+	//Check if the user is logged in
+	@include('php/logged-in.php');
+?>
 
 <!DOCTYPE html>
 <html>

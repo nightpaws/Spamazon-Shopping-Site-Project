@@ -4,10 +4,11 @@ This list is a list of the pages that are done, complete, final and shall never 
 
 ##The List##
 
-
+* Index.php
+* Mens.php
+* Womans.php
 * about.php
 * close-account.php
-* Index.php
 * policies.php
 * returns.php
 * 404.php

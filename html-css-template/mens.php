@@ -3,6 +3,7 @@
 	$page_type = "home";
 	$page_title = "Mens Home";	//What is displayed As the page title in the browser
 	$page_description = "Welcome to the Mens section of Spamazon. Here you can find manly clothing" //The page description
+	$cat = "men";
 ?>
 
 
@@ -61,9 +62,6 @@
 			</ul>
 		</div>
 		<div class="group todays-deals l-content">
-
-			<?php $cat = "mens"; ?>
-			
 			<div class="deal-header">
 				<h2>Todays Deals:</h2>
 				<h3> - 100% guaranteed to be at full price, no matter what!</h3>

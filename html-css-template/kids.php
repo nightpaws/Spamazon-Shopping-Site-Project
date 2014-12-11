@@ -2,7 +2,8 @@
 	//The land of variables
 	$page_type = "home";
 	$page_title = "Kids Home";	//What is displayed As the page title in the browser
-	$page_description = "Welcome to the Kids section of Spamazon. Here you can things for the brats." //The page description
+	$page_description = "Welcome to the Kids section of Spamazon. Here you can things for the brats."; //The page description
+	$cat = "kids";
 ?>
 
 
@@ -41,10 +42,12 @@
 							</div>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge.php"); ?>
+							<?php $reversed = false; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge-reversed.php"); ?>
+							<?php $reversed = true; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
 						</li>
 					</ul>
 				</div>
@@ -52,10 +55,10 @@
 		</div>
 		<div class="group l-content cats">
 			<ul>
-				<li><a href="#">Tops</a></li>
-				<li><a href="#">Bottoms</a></li>
-				<li><a href="#">Shoes</a></li>
-				<li><a href="#">Other Stuff</a></li>
+				<li><a href="category.php?cat=kids-tops">Tops</a></li>
+				<li><a href="category.php?cat=kids-bottoms">Bottoms</a></li>
+				<li><a href="category.php?cat=kids-shoes">Shoes</a></li>
+				<li><a href="category.php?cat=kids-stuff">Other Stuff</a></li>
 			</ul>
 		</div>
 		<div class="group todays-deals l-content">
@@ -64,36 +67,19 @@
 				<h3> - 100% guaranteed to be at full price, no matter what!</h3>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 procuct">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 		</div>
 		<div class="suggested-items l-content">
 			<h2>Based on your browsing:</h2>
 			<div class="items">
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
+				<?php include('databaseFunct/reccommend.php'); ?>
 			</div>
 	</article>
 	<footer>

@@ -2,7 +2,8 @@
 	//The land of variables
 	$page_type = "home";
 	$page_title = "Womens Home";	//What is displayed As the page title in the browser
-	$page_description = "Welcome to the Womens section of Spamazon. Here you can find womenly clothing" //The page description
+	$page_description = "Welcome to the Womens section of Spamazon. Here you can find womenly clothing"; //The page description
+	$cat = "woman";
 ?>
 
 
@@ -41,11 +42,13 @@
 							</div>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge.php"); ?>
+							<?php $reversed = false; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
 						</li>
 						<li>
-							<?php include("page-elements/product/product-extralarge-reversed.php"); ?>
-						</li>
+							<?php $reversed = true; ?>
+							<?php include('databaseFunct/subhome-splash.php'); ?>
+						</li>					
 					</ul>
 				</div>
 			</div>
@@ -64,36 +67,19 @@
 				<h3> - 100% guaranteed to be at full price, no matter what!</h3>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 product">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 			<div class="col s4 procuct">
-				<?php include('page-elements/product/product-medium-sale.php'); ?>
+				<?php include('databaseFunct/subpage-sale.php'); ?>
 			</div>
 		</div>
 		<div class="suggested-items l-content">
 			<h2>Based on your browsing:</h2>
 			<div class="items">
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
-				<div>
-					<?php include('page-elements/product/product-small.php'); ?>
-				</div>
+				<?php include('databaseFunct/reccommend.php'); ?>
 			</div>
 	</article>
 	<footer>

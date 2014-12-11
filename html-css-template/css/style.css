@@ -861,7 +861,7 @@ h1 {
 	Product
 *******************************************************************************/
 /*
- * Handles the styling of the products accross the site
+ * Handles the styling of the products across the site
  */
  /*******************************************************************************
 	Global 
@@ -943,7 +943,7 @@ h1 {
     text-align: left;
     margin: 0 0 0 1rem; }
   .product-large p {
-    padding: 1rem 0; }
+    padding-left: 35%;}
   .product-large #img-slider {
     float: left;
     height: 18.75rem;

@@ -789,7 +789,10 @@ h1 {
     clear: both; }
   .purchase button[type="submit"] {
     display: block;
-    clear: both; }
+    clear: both;
+	width: 10em;
+	height: 2em;
+	color: black; }
   .purchase select, .purchase button {
     margin-left: 0.5rem; }
 

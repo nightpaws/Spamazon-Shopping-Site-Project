@@ -50,7 +50,7 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 					</select>
-					<button type="submit"></button>
+					<button type="submit">Submit</button>
 				</form>
 			</div>
 		</div>

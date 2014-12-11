@@ -60,7 +60,8 @@
 				<?php include('databaseFunct/findSimilar.php');?>
 			</div>
 		</div>
-		<div class="reviews">
+		<!-- 
+<div class="reviews">
 			<h3>Raving reviews about this product:</h3>
 			<div class="container">
 				<div class="group">
@@ -77,9 +78,11 @@
 				<div class="group more">
 					<a class="a-button col s3" href="#">Read More Reviews</a>
 					<a class="a-button col s3" href="#">Leave a Review</a>
+
 				</div>
 			</div>
 		</div>
+ -->
 	</article>
 	<footer>
 		<?php  include('page-elements/footer.php'); ?>

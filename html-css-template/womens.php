@@ -52,10 +52,10 @@
 		</div>
 		<div class="group l-content cats">
 			<ul>
-				<li><a href="#">Tops</a></li>
-				<li><a href="#">Bottoms</a></li>
-				<li><a href="#">Shoes</a></li>
-				<li><a href="#">Other Stuff</a></li>
+				<li><a href="category.php?cat=womans-tops">Tops</a></li>
+				<li><a href="category.php?cat=womans-bottoms">Bottoms</a></li>
+				<li><a href="category.php?cat=womans-shoes">Shoes</a></li>
+				<li><a href="category.php?cat=womans-other">Other Stuff</a></li>
 			</ul>
 		</div>
 		<div class="group todays-deals l-content">

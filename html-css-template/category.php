@@ -27,14 +27,14 @@
 
 	if($todisply == 1){
 		$result = mysql_query("
-				SELECT name, price, image
+				SELECT DISTINCT name, price, image
 				FROM cs312_stock
-				WHERE category LIKE '%mens-tops%';
+				WHERE category LIKE '" .$category."%';
 			");
 	}elseif($todisply ==2){
 
 		$result = mysql_query("
-				SELECT name, price, image
+				SELECT DISTINCT name, price, image
 				FROM cs312_stock
 				WHERE category = " .$category .";
 			");
@@ -62,7 +62,7 @@
 				<div class="returned">
 					<?php
 
-						if ( is_string($result) || mysql_num_rows($result) == 0) { // add this check. ?>
+						if (is_string($result) || mysql_num_rows($result) == 0) { // add this check. ?>
 			        		<h3>The entered category of: <?php echo $category; ?>, does not exist in our world.</h3> 
 			        		<?php die();
 			    		}
@@ -87,7 +87,7 @@
 							if($display == true){
 								$name = $row["name"];
 								$price = $row["price"];
-								$imageURL = $row["image"];
+								$image = $row["image"];
 
 								@include('page-elements/product/product-small.php');
 							}

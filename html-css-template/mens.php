@@ -57,7 +57,7 @@
 				<li><a href="category.php?cat=mens-tops">Tops</a></li>
 				<li><a href="category.php?cat=mens-bottoms">Bottoms</a></li>
 				<li><a href="category.php?cat=mens-shoes">Shoes</a></li>
-				<li><a href="category.php?cat=mens-other">Other Stuff</a></li>
+				<li><a href="category.php?cat=mens-stuff">Other Stuff</a></li>
 			</ul>
 		</div>
 		<div class="group todays-deals l-content">

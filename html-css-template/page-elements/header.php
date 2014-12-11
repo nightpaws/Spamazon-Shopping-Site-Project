@@ -13,19 +13,19 @@
 						<a href="mens.php" aria-haspopup="true">Mens</a>
 						<ul>
 							<li class="mobile"><a href="mens.php">Mens home</a></li>
-							<li><a href="#">Top</a></li>
-							<li><a href="#">Bottom</a></li>
-							<li><a href="#">Shoe</a></li>
-							<li><a href="#">Stuffs</a></li>
+							<li><a href="category.php?cat=mens-tops">Tops</a></li>
+							<li><a href="category.php?cat=mens-bottoms">Bottoms</a></li>
+							<li><a href="category.php?cat=mens-shoes">Shoes</a></li>
+							<li><a href="category.php?cat=mens-other">Other Stuff</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="womens.php" aria-haspopup="true">Womens</a>
 						<ul>
-							<li><a href="#">Top</a></li>
-							<li><a href="#">Bottom</a></li>
-							<li><a href="#">Shoe</a></li>
-							<li><a href="#">Stuffs</a></li>
+							<li><a href="category.php?cat=womans-tops">Tops</a></li>
+							<li><a href="category.php?cat=womans-bottoms">Bottoms</a></li>
+							<li><a href="category.php?cat=womans-shoes">Shoes</a></li>
+							<li><a href="category.php?cat=womans-stuff">Other Stuff</a></li>
 						</ul>
 					</li>
 					<li>

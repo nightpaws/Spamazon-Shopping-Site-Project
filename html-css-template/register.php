@@ -29,7 +29,7 @@ include('page-elements/header.php');
 							<label for="email">Email:</label>
 						</td>
 						<td>
-							<input type="text" name="email">
+							<input type="text" name="email" placeholder="Email" >
 						</td>
 					</tr>
 					<tr>
@@ -37,7 +37,7 @@ include('page-elements/header.php');
 							<label for="passwd">Password:</label>
 						</td>
 						<td>
-							<input type="password" name="password">
+							<input type="password" name="password" placeholder="********">
 						</td>
 					</tr>
 					<tr>
@@ -45,7 +45,7 @@ include('page-elements/header.php');
 							<label for="passwdC">Confirm Password:</label>
 						</td>
 						<td>
-							<input type="password" name="passwordC">
+							<input type="password" name="passwordC" placeholder="********">
 						</td>
 					</tr>
 				</table>
@@ -56,7 +56,7 @@ include('page-elements/header.php');
 							<label for="fname">First name:</label>
 						</td>
 						<td>
-							<input type="text" name="fname">
+							<input type="text" name="fname" placeholder="e.g. John">
 						</td>
 					</tr>
 					<tr>
@@ -64,7 +64,7 @@ include('page-elements/header.php');
 							<label for="sname">Surname:</label>
 						</td>
 						<td>
-							<input type="text" name="sname">
+							<input type="text" name="sname" placeholder="e.g. Smith">
 						</td>
 					</tr>
 					<tr>
@@ -72,7 +72,7 @@ include('page-elements/header.php');
 							<label for="dob">Date of Birth:</label>
 						</td>
 						<td>
-							<input type="text" name="dob">
+							<input type="text" name="dob" placeholder="e.g. 23-06-1984">
 						</td>
 					</tr>
 				</table>

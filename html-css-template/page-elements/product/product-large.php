@@ -6,7 +6,7 @@
 <div class="product-large container">
 	<div class="group">
 		<div id="img-slider">
-			<img src="<?php echo $image;?>" alt="<?php //img alt text?>">
+			<img src="<?php echo $image;?>" style="max-width:313px;" alt="<?php //img alt text?>">
 			<!-- 
 <img src="#" alt="<?php //img alt text?>">
 			<img src="#" alt="<?php //img alt text?>">

@@ -29,4 +29,4 @@
 			</ul>
 		</div>
 		<img class="logo" src="img/logo.png" alt="Spamazon Logo">
-		<p class="desktop">&copy; <?php echo date('Y'); ?> <a href="http://www.tom-maxwell.com">Thomas Maxwell</a>, Craig Morrison, Stewart Key, Aidan O'Grady, Chloe Forsyth</p>
+		<p class="desktop">&copy; <?php echo date('Y'); ?> <a href="http://www.tom-maxwell.com">Thomas Maxwell</a>, <a href="http://nightpaws.eu">Craig Morrison</a>, Stewart Key, Aidan O'Grady, Chloe Forsyth</p>

@@ -53,8 +53,8 @@
 				<li>
 					<h3>Craig Morrison</h3>
 					<p>Constructed the database, documentation and queries. </br>
-					Also built the code behind several pages, lots of server side validation.</br>
-					Designed the site logo.</p>
+					Built the code behind several pages, lots of server side validation.</br>
+					Session management &amp; account termination. Also designed the site logo.</p>
 					<ul>
 						<li><a class="website" href="http://nightpaws.eu">nightpaws.eu</a></li>
 						<li><a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#109;&#105;&#110;&#64;&#110;&#105;&#103;&#104;&#116;&#112;&#97;&#119;&#115;&#46;&#101;&#117;'>&#77;&#97;&#105;&#108;&#32;&#77;&#101;</a></li>

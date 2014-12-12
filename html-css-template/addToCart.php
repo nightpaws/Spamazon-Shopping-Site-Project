@@ -10,7 +10,7 @@
   this is to prevent the same item showing up multiple times in the basket
   and customers double clicking the add button to prevent it being addded twice */
   array_push($_SESSION['spamazncart'], $item);
-  $newItem = str_replace("%20","+",$item);
+  $newItem = str_replace(" ","+",$item);
   header('Location: product-page.php?item=' . $newItem);
 
 ?>

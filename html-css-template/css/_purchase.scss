@@ -1,19 +1,17 @@
-.purchase:before{
-	float: left;
-	content: "";
-	display: block;
-	height: 500px;
-	width: 1px;
-	background: $lightblue;
-}
-
 .purchase{
 
 	float: left;
 	margin-top: 1rem;
+	border-left: 1px solid $lightblue;
 
 	form{
 		padding-left: 0.5rem;
+	}
+	
+	div:after{
+		display: block;
+		content: "";
+		clear: both;
 	}
 
 	.select{
@@ -26,7 +24,7 @@
 		}
 
 		button{
-			display: inline-block;
+			display: block;
 			margin: 0.5rem 0.5rem;
 			float: left;
 			padding-left: 0.7rem;

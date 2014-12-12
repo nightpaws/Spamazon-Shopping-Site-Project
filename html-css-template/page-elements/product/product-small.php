@@ -1,5 +1,8 @@
 <div class="product-small">
-	<a href=<?php echo "product-page.php?item=".str_replace(" ", "+", $name);?>>
+	<a href=<?php 
+	$newname = str_replace("'s","s", $name);
+	echo "product-page.php?item=".str_replace(" ", "+", $newname);
+	?>>
 	<img src="<?php echo $image; ?>" alt="Product Image">
 	<div class="product-info">
 		<?php if (strlen($name) > 23): ?>

@@ -31,10 +31,10 @@
 					<li>
 						<a href="kids.php" aria-haspopup="true">Kids</a>
 						<ul>
-							<li><a href="#">Top</a></li>
-							<li><a href="#">Bottom</a></li>
-							<li><a href="#">Shoe</a></li>
-							<li><a href="#">Stuffs</a></li>
+							<li><a href="category.php?cat=kids-tops">Top</a></li>
+							<li><a href="category.php?cat=kids-bottoms">Bottom</a></li>
+							<li><a href="category.php?cat=kids-shoes">Shoe</a></li>
+							<li><a href="category.php?cat=kids-other">Stuffs</a></li>
 						</ul>
 					</li>
 				</ul>

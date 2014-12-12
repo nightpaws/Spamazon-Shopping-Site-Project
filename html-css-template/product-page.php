@@ -24,18 +24,12 @@
 				<form action="#" method="post">
 					<ul class="size-select select">
 						<li>Select Size</li>
-						<li><button class="selected" name="size" value="s">S</button></li>
-						<li><button name="size" value="m">M</button></li>
-						<li><button name="size" value="l">L</button></li>
-						<li><button name="size" value="xl">XL</button></li>
+						<?php include("databaseFunct/getSizes.php");?>
 					</ul>
+					</br></br></br>
 					<ul class="color-select select">
 						<li>Select Colour</li>
-						<li><button name="color" value="blue" style="background-color:rgba(0,0,0,0.1);"><span>blue</span></button></li>
-						<li><button name="color" value="red" style="background-color:rgba(0,0,0,0.1)"><span>red</span></button></li>
-						<li><button name="color" value="black" style="background-color:rgba(0,0,0,0.1)"><span>black</span></button></li>
-						<li><button name="color" value="purple" style="background-color:rgba(0,0,0,0.1)"><span>purple</span></button></li>
-						<li><button name="color" value="yellow" style="background-color:rgba(0,0,0,0.1)"><span>yellow</span></button></li>
+						<li><?php include("databaseFunct/getColours.php");?></li>
 					</ul>
 					<label for="quantity">Quantity</label>
 					<select name="quantity" >

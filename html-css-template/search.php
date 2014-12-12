@@ -14,15 +14,9 @@
 	<header>
 		<?php include('page-elements/header.php'); ?>
 	</header>
-	<article class="search container">
+	<article class="search container l-content">
 		<div class="group">
-			<div class="col s4 control">
-				<div>
-					<p>Here should go filters</p>
-					<p>Imagine the wonderfully underlying form to implement this</p>
-				</div>
-			</div>
-			<div class="col s8 result">
+			<div class="col s12 result">
 				<?php include('databaseFunct/search.php'); ?>
 			</div>
 		</div>

@@ -7,7 +7,7 @@
         OR category LIKE '%$term%' OR description LIKE '%$term%' GROUP BY(name)");
     
     if ( mysql_num_rows($result) == 0) { // add this check.
-        ?> <h3>No results found for your search, sowwie</h3> <?php
+        ?> <h3>No results found for your search, Sorry!</h3> <?php
         die();
     }
     

@@ -30,3 +30,6 @@ function indexRedirect(){
 function loginRedirect(){
   window.location = "./login.php";
 }
+function registerRedirect(){
+  window.location = "./register.php";
+}

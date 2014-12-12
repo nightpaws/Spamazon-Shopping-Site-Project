@@ -36,14 +36,6 @@
 			</tr>
 			<tr>
 				<td>
-					<label for="country">Country:</label>
-				</td>
-				<td>
-					<?php include('page-elements/checkout/countries.php');?>
-				</td>
-			</tr>
-			<tr>
-				<td>
 					<label for="phone">Phone Number:</label>
 				</td>
 				<td>

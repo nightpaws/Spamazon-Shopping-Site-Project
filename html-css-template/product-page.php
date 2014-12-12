@@ -21,7 +21,7 @@
 			</div>
 			<div class="purchase col s3">
 				<?php //This section should be modified as needed ?>
-				<form action="#" method="post">
+				<form action="addtoCart.php" method="post">
 					<ul class="size-select select">
 						<li>Select Size</li>
 						<?php include("databaseFunct/getSizes.php");?>

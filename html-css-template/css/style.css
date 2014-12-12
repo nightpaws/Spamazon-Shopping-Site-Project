@@ -789,7 +789,10 @@ h1 {
     clear: both; }
   .purchase button[type="submit"] {
     display: block;
-    clear: both; }
+    clear: both;
+	width: 10em;
+	height: 2em;
+	color: black; }
   .purchase select, .purchase button {
     margin-left: 0.5rem; }
 
@@ -861,7 +864,7 @@ h1 {
 	Product
 *******************************************************************************/
 /*
- * Handles the styling of the products accross the site
+ * Handles the styling of the products across the site
  */
  /*******************************************************************************
 	Global 
@@ -943,7 +946,7 @@ h1 {
     text-align: left;
     margin: 0 0 0 1rem; }
   .product-large p {
-    padding: 1rem 0; }
+    padding-left: 35%;}
   .product-large #img-slider {
     float: left;
     height: 18.75rem;

@@ -14,17 +14,30 @@
 	<header>
 		<?php include('page-elements/header.php'); ?>
 	</header>
-	<article class="search container">
+	<article class="search container l-content">
 		<div class="group">
-			<div class="col s4 control">
-				<div>
-					<p>Here should go filters</p>
-					<p>Imagine the wonderfully underlying form to implement this</p>
-				</div>
-			</div>
-			<div class="col s8 result">
+			<div class="col s12 result">
 				<?php include('databaseFunct/search.php'); ?>
 			</div>
+		</div>
+		<div class="pagination group">
+			<?php if($pagination): ?>
+
+					<div class="back col s6">
+						<?php if($startat >= $displayingPerPage): //display back
+							
+							$backto = $startat - $displayingPerPage;
+							echo "<a href='search.php?term=$term&startat=$backto'>&#8592; Back</a>";
+						endif; ?>
+					</div>
+					<div class="next col s6">
+						<?php if ($startat + $displayingPerPage < mysql_num_rows($result)):
+
+							$nextto = $startat + $displayingPerPage;
+							echo "<a href='search.php?term$term&startat=$nextto'>Next &#8594;</a>";
+						endif; ?>
+					</div>
+				<?php endif; ?>
 		</div>
 	</article>
 	<footer>

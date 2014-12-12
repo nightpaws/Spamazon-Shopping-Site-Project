@@ -4,8 +4,13 @@
 	$page_type = "cart";
 	$page_title = "Shopping Cart";	//What is displayed As the page title in the browser
 	$page_description = "Your Spamazon shopping cart"; //The page description
+	$cookie_name = "spamazncart";
 
-
+//do stuff to get user and retrieve data
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "You are not logged in! Cannot Display Basket.";
+	die();
+} else {
 	if(count($_SESSION['spamazncart'])>0){
 
 		// get the product ids
@@ -115,5 +120,6 @@ else{
 		echo "<div class='alert alert-danger'>";
 				echo "<strong>No products found</strong> in your cart!";
 		echo "</div>";
+}
 }
 ?>

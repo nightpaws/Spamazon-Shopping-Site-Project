@@ -1,7 +1,7 @@
 <?php
 	//The land of variables
 	$page_type = "product";
-	$page_title = "Product Name";	//What is displayed As the page title in the browser
+	$page_title = $_GET["item"];	//What is displayed As the page title in the browser
 	$page_description = "Brief product description"; //The page description
 ?>
 
@@ -31,30 +31,28 @@
 						<li>Select Colour</li>
 						<li><?php include("databaseFunct/getColours.php");?></li>
 					</ul>
-					<label for="quantity">Quantity</label>
-					<select name="quantity" >
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-					</select>
-					<?php
-					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
-           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
-           echo "</a>";
-					?>
+					<ul>
+						<label for="quantity">Quantity</label>
+						<select name="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</ul>
+					<button type="submit">Add to Cart</button>
 				</form>
 			</div>
 		</div>
 		<div class="suggested-items">
 			<h3>You might also love to wear:</h3>
-			<div class="items">
+				<div class="items">
 				<?php include('databaseFunct/findSimilar.php');?>
 			</div>
 		</div>

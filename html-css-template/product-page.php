@@ -2,7 +2,7 @@
 	//The land of variables
 	$page_type = "product";
 	$page_title = "Product Name";	//What is displayed As the page title in the browser
-	$page_description = "Brief product description"; //The page description
+	$page_description = "Brief product description" //The page description
 ?>
 
 <!DOCTYPE html>
@@ -50,11 +50,7 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 					</select>
-					<?php
-					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
-           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
-           echo "</a>";
-					?>
+					<button type="submit"></button>
 				</form>
 			</div>
 		</div>
@@ -64,8 +60,7 @@
 				<?php include('databaseFunct/findSimilar.php');?>
 			</div>
 		</div>
-		<!--
-<div class="reviews">
+		<div class="reviews">
 			<h3>Raving reviews about this product:</h3>
 			<div class="container">
 				<div class="group">
@@ -82,11 +77,9 @@
 				<div class="group more">
 					<a class="a-button col s3" href="#">Read More Reviews</a>
 					<a class="a-button col s3" href="#">Leave a Review</a>
-
 				</div>
 			</div>
 		</div>
- -->
 	</article>
 	<footer>
 		<?php  include('page-elements/footer.php'); ?>

@@ -2,7 +2,7 @@
 	//The land of variables
 	$page_type = "home";
 	$page_title = "Mens Home";	//What is displayed As the page title in the browser
-	$page_description = "Welcome to the Mens section of Spamazon. Here you can find manly clothing"; //The page description
+	$page_description = "Welcome to the Mens section of Spamazon. Here you can find manly clothing" //The page description
 	$cat = "men";
 ?>
 

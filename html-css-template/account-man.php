@@ -5,11 +5,6 @@
 	$page_description = "This page is for managing your account" //The page description
 ?>
 
-<?php
-	//Check if the user is logged in
-	@include('php/logged-in.php');
-?>
-
 <!DOCTYPE html>
 <html>
 <head>

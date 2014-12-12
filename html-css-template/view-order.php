@@ -5,11 +5,6 @@
 	$page_description = "This order was placed on 11/11/2011" //The page description
 ?>
 
-<?php
-	//Check if the user is logged in
-	@include('php/logged-in.php');
-?>
-
 
 <!DOCTYPE html>
 <html>

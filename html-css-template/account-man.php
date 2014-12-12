@@ -79,7 +79,7 @@
 		</div>
 		<div class="group" id="account-settings">
 			<h2>Account Settings</h2>
-			<div class="col s4">
+			<div class="col s6">
 				<h3>Account Details</h3>
 				<div class="details">
 						<a href="account-man-email-change.php">Change email</a>
@@ -88,20 +88,12 @@
 						<a href="account-man-pass-change.php">Change password</a>
 				</div>
 				<div class="details">
-						<a href="order-page.php">Change I don't know other stuff</a>
+						<a href="account-man-other-change.php">Change I don't know other stuff</a>
 				</div>
 			</div>
-			<div class="col s4">
+			<div class="col s6">
 				<h3>Payment Details</h3>
-				<div class="details">
-					<a href="order-page.php">Modify card ending in 4672</a>
-				</div>
-				<div class="details">
-					<a href="order-page.php">Modify card ending in 4675</a>
-				</div>
-			</div>
-			<div class="col s4">
-				<h3>Address Details</h3>
+				<?php include('databaseFunct/payment-methods.php') ?>
 			</div>
 		</div>
 		<div class="group danger-zone">

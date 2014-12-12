@@ -12,7 +12,7 @@
         <div class="order">
             <p>
                 <a href="view-order.php"><?php echo $name; ?></a>
-                <span> <?php echo $date; ?> </span>
+                <span>Ordered: <?php echo $date; ?></span>
             </p>
         </div>
 <?php

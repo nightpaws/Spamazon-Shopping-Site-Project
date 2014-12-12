@@ -22,7 +22,7 @@
 	//if 3 is produced we are to display the results of a smaller search.
 	$todisply = substr_count($category, '-');
 	$pagination = false;
-	$displayingPerPage = 4;
+	$displayingPerPage = 20;
 	$result;
 
 	if($todisply == 1){
@@ -67,7 +67,7 @@
 			        		<?php die();
 			    		}
 
-			    		if (mysql_num_rows($result) > 4 ){
+			    		if (mysql_num_rows($result) > 20 ){
 			    			$pagination=true;
 			    		}
 

@@ -56,29 +56,6 @@
 				<?php include('databaseFunct/findSimilar.php');?>
 			</div>
 		</div>
-		<!--
-<div class="reviews">
-			<h3>Raving reviews about this product:</h3>
-			<div class="container">
-				<div class="group">
-					<div class="main-reviews col s8">
-						<?php include('page-elements/review.php'); ?>
-						<?php include('page-elements/review.php'); ?>
-					</div>
-					<div class="col s4">
-						<div class="sub-reviews">
-							<?php include('page-elements/review.php'); ?>
-						</div>
-					</div>
-				</div>
-				<div class="group more">
-					<a class="a-button col s3" href="#">Read More Reviews</a>
-					<a class="a-button col s3" href="#">Leave a Review</a>
-
-				</div>
-			</div>
-		</div>
- -->
 	</article>
 	<footer>
 		<?php  include('page-elements/footer.php'); ?>

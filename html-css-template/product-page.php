@@ -46,7 +46,11 @@
 							<option value="10">10</option>
 						</select>
 					</ul>
-					<button type="submit">Add to Cart</button>
+					<?php
+					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
+           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
+           echo "</a>";
+					?>
 				</form>
 			</div>
 		</div>

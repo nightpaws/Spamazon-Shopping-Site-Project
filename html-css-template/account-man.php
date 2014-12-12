@@ -24,57 +24,11 @@
 			<h2>Manage Orders</h2>
 			<div class="col s6 open-orders">
 				<h3>Open Orders</h3>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
+				<?php include('databaseFunct/viewOpenOrders.php'); ?>
 			</div>
 			<div class="col s6 past-orders">
 				<h3>Closed Orders</h3>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
-				<div class="order">
-					<p>
-						<a href="view-order.php">Product Name</a>
-						<span> 11/11/2011 </span>
-					</p>
-				</div>
+				<?php include('databaseFunct/viewClosedOrders.php'); ?>
 			</div>			
 		</div>
 		<div class="group" id="account-settings">

@@ -47,7 +47,7 @@
 						<a href="cart-page.php">Cart</a>
 						<ul>
 							<li><a href="cart-page.php">View Cart</a></li>
-							<li><a href="#">Checkout</a></li>
+							<li><a href="checkout.php">Checkout</a></li>
 						</ul>
 					</li>
 				</ul>

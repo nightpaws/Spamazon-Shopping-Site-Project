@@ -7,10 +7,12 @@
 	$cookie_name = "spamazncart";
 
 //do stuff to get user and retrieve data
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "You are not logged in! Cannot Display Basket.";
+if(!isset($_SESSION)) {
+    echo "You have not added anything do your basket.";
 	die();
 } else {
+
+
 	if(count($_SESSION['spamazncart'])>0){
 
 		// get the product ids
@@ -23,7 +25,6 @@ if(!isset($_COOKIE[$cookie_name])) {
 		for($x = 0; $x<count($basket); $x++){
 			$result = mysql_query("SELECT * FROM cs312_stock WHERE name LIKE '$basket[$x]' LIMIT 1;");
 			$row = mysql_fetch_array($result);
-
 					$name = $row{"name"};
 					$size = $row{"size"};
 					$colour = $row{"colour"};
@@ -90,6 +91,13 @@ if(!isset($_COOKIE[$cookie_name])) {
 																<li id="quantity">2</li>
 															</ul>
 														</li>
+														<li>
+															<ul id="child-list">
+															<?php
+															echo "<a href='remove-from-cart.php?item=$itemName[$x]' class='btn btn-primary'>";
+															echo "<span class='glyphicon glyphicon-shopping-cart'></span> Remove";
+															echo "</a>";
+															?>
 													</ul>
 												</div>
 											</div>
@@ -99,7 +107,7 @@ if(!isset($_COOKIE[$cookie_name])) {
 
 
 
-						<?php $total_price+=$price;
+						<?php $total_price+=$itemPrice[$x];
 				}
 				?>
 				<h3> Total basket value = £<?php echo $total_price ?> </h3>
@@ -117,9 +125,7 @@ if(!isset($_COOKIE[$cookie_name])) {
 				<?php
 }
 else{
-		echo "<div class='alert alert-danger'>";
-				echo "<strong>No products found</strong> in your cart!";
-		echo "</div>";
+		header("Location: empty-cart.php");
 }
 }
 ?>

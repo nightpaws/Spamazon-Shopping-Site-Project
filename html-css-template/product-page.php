@@ -21,7 +21,7 @@
 			</div>
 			<div class="purchase col s3">
 				<?php //This section should be modified as needed ?>
-				<form action="#" method="post">
+				<form action="addtoCart.php" method="post">
 					<ul class="size-select select">
 						<li>Select Size</li>
 						<?php include("databaseFunct/getSizes.php");?>
@@ -46,7 +46,11 @@
 							<option value="10">10</option>
 						</select>
 					</ul>
-					<button type="submit">Add to Cart</button>
+					<?php
+					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
+           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
+           echo "</a>";
+					?>
 				</form>
 			</div>
 		</div>

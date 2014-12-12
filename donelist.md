@@ -12,6 +12,7 @@ This list is a list of the pages that are done, complete, final and shall never 
 * policies.php
 * returns.php
 * 404.php
+* search.php
 
 ###Header/Footer
 

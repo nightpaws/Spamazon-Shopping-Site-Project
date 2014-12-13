@@ -1,4 +1,6 @@
 <?php
+
+	session_start();
 	include("databaseconnection.php");
 
 	$email = $_COOKIE['spamaznauth'];
@@ -37,10 +39,10 @@
 
 
 				$result = mysql_query("INSERT INTO `cs312_orderItem`(`cs312_orderId`, `cs312_stockname`, `cs312_stocksize`, `cs312_stockcolour`, `quantityOrdered`) VALUES (
-					($id,'$name','$size','$colour',$quantity)");
+					$id,'$name','$size','$colour',$quantity)");
 
-			}
 		}
+	}
 
 	header("Location: ../account-man.php");
 

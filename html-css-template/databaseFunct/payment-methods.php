@@ -22,8 +22,6 @@
 
 			$endOfCard = substr($row["cardNo"], 12);
 
-			echo $endOfCard;
-
 			?>
 
 			<div class="details">

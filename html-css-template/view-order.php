@@ -22,7 +22,7 @@
 	</header>
 	<article id="view-order" class="l-content">
 		<div id="ordered-on">
-			<h3>Ordered on 11/11/2011</h3>
+			<h3>Ordered on <?php echo $date;?></h3>
 		</div>
 		<div id="product">
 			<?php @include('page-elements/product/product-large.php'); ?>

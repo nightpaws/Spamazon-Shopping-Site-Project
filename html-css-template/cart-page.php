@@ -25,7 +25,13 @@
 				</div>
 				<div class="to-checkout col s4">
 					<h3>Your total is</h3>
-					<?php echo "<h4>£$basketTotalPrice</h4>";?>
+					<?php 
+
+						if(isset($basketTotalPrice)){
+							echo "<h4>£$basketTotalPrice</h4>";
+						}else{
+							echo "<h4>£0.00</h4>";
+						} ?>
 					<a href="checkout.php" class="a-button">Checkout</a>
 				</div>
 			</div>

@@ -757,7 +757,7 @@ h1 {
   float: left;
   margin-top: 1rem;
   border-left: 1px solid #abd0f8;
-  height: 31.25rem; }
+  height: 100%; }
   .purchase form {
     padding-left: 0.5rem; }
   .purchase div:after {

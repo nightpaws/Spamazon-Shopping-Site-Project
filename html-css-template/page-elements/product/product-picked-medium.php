@@ -29,7 +29,7 @@
 			<li>
 				<ul id="child-list">
 					<li>Remove:</li>
-					<?php echo "<a class=\"a-button\" id=\"remove\" href=\"removeFromCart.php?item=$name\">Remove</a>";?>
+					<?php echo "<a class=\"a-button\" id=\"remove\" href=\"remove-from-cart.php?item=$name\">Remove</a>";?>
 				</ul>
 			</li>
 		</ul>

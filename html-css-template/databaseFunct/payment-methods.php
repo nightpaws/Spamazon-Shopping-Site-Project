@@ -20,7 +20,7 @@
 
 		while ($row = mysql_fetch_array($result)):
 
-			$endOfCard = substr($row["cardNo"], 11);
+			$endOfCard = substr($row["cardNo"], 12);
 
 			echo $endOfCard;
 

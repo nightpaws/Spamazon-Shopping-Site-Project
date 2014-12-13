@@ -4,7 +4,7 @@
 			<label for="cardNumber">Card Number:</label>
 		</td>
 		<td>
-			<input type="text" name="cardNumber">
+			<input type="text" name="cardNumber" maxlength="16">
 		</td>
 	</tr>
 	<tr>
@@ -20,7 +20,7 @@
 			<label for="securityCode">Security Code:</label>
 		</td>
 		<td>
-			<input type="text" name="securityCode">
+			<input type="text" name="securityCode" maxlength="3">
 		</td>
 	</tr>
 	<tr>
@@ -28,7 +28,7 @@
 			<label for="sortCode">Sort Code:</label>
 		</td>
 		<td>
-			<input type="text" name="sortCode">
+			<input type="text" name="sortCode" maxlength="6">
 		</td>
 	</tr>
 	<tr>

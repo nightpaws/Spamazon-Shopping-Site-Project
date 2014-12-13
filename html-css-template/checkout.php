@@ -22,7 +22,7 @@
 	<article>
 	<h1 class="page-header">Order Details</h1>
 		<div class="reg">
-			<form name="order" action="databaseFunct/purchase.php" method="post">
+			<form name="order" action="databaseFunct/purchase.php" method="post" onsubmit="return checkoutValidation()">
 				<h2 class="page-header">Address Details</h1>
 				<?php include('page-elements/checkout/address.php') ?>
 				<h2 class="page-header">Card Details</h1>
@@ -34,5 +34,6 @@
 	<footer>
 		<?php include('page-elements/footer.php'); ?>
 	</footer>
+	  <script type="text/javascript" src="./js/checkoutValidation.js"></script>
 </body>
 </html>

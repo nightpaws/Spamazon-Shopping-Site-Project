@@ -8,10 +8,10 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-<?php /* Loading in the stuff for the slider if its needed on the page */ ?>
-<?php if($page_type == "home"): ?>
+<?php //Load stuff for different pages
+	 if($page_type == "home"){ ?>
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
 		<script src="js/jquery.flexslider-min.js"></script>
 		<script src="js/home.js"></script>
-<?php endif ?>
+	<?php } ?>
 <link rel="stylesheet" type="text/css" href="css/style.css">

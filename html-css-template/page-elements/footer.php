@@ -30,3 +30,9 @@
 		</div>
 		<img class="logo" src="img/logo.png" alt="Spamazon Logo">
 		<p class="desktop">&copy; <?php echo date('Y'); ?> <a href="http://www.tom-maxwell.com">Thomas Maxwell</a>, <a href="http://nightpaws.eu">Craig Morrison</a>, Stewart Key, Aidan O'Grady, Chloe Forsyth</p>
+		<?php
+			if($page_type == "product"){?>
+
+				<script type="text/javascript" src="js/purchase.js"></script>
+
+		<?php } ?>

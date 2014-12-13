@@ -20,7 +20,8 @@
 				<?php include('page-elements/product/product-large.php'); ?>
 			</div>
 			<div class="purchase col s3">
-				<form action="addtoCart.php" method="post">
+				<form action="addToCart.php" method="post">
+					<?php echo "<input type='hidden' name='item' value='$item'>"; ?>
 					<div>
 						<ul class="size-select select">
 							<li>Select Size</li>
@@ -48,11 +49,7 @@
 							<option value="10">10</option>
 						</select>
 					</ul>
-					<?php
-					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
-           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
-           echo "</a>";
-					?>
+					<button type="submit">Add to Cart</button>
 				</form>
 			</div>
 		</div>

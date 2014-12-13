@@ -1,9 +1,9 @@
 <div class="product-picked-medium product-medium">
-	<a href="#">
-	<img src="#" alt="Product image">
+	<?php echo "<a href=\"product-page.php?item=$name\">";?>
+	<?php echo "<img src=\"$image\" alt=\"Image of $name\">";?>
 	<div class="product-info">
-		<h4>Product Name</h4>
-		<p> £5.31</p>
+		<h4><?php echo $name; ?></h4>
+		<p><?php echo $price; ?></p>
 	</div>
 	</a>
 	<div class="picked-options">
@@ -11,19 +11,19 @@
 			<li>
 				<ul id="child-list">
 					<li>Colour:</li>
-					<li id="colour">Black</li>
+					<?php echo "<li id=\"colour\">$colour</li>"; ?>
 				</ul>
 			</li>
 			<li>
 				<ul id="child-list">
 					<li>Size:</li>
-					<li id="size">XL</li>
+					<?php echo "<li id=\"size\">$size</li>";?>
 				</ul>
 			</li>
 			<li>
 				<ul id="child-list">
 					<li>Quantity:</li>
-					<li id="quantity">2</li>
+					<?php echo "<li id=\"quantity\">$quantity</li>";?>
 				</ul>
 			</li>
 		</ul>

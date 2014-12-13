@@ -1,6 +1,7 @@
 <?php 
 	$item = $_GET["item"];
 	include ('databaseFunct/findProduct.php');
+
 ?>
 
 <div class="product-large container">
@@ -20,20 +21,5 @@
 	</div>
 	<div class="product-details">
 		<p><?php echo $description;?></p>
-		<!-- <h3>Details</h3>
-		<table>
-			<tr>
-				<td>Materials:</td>
-				<td>Cotton</td>
-			</tr>
-			<tr>
-				<td>Country:</td>
-				<td>China (duh!)</td>
-			</tr>
-			<tr>
-				<td>Slave Labour?:</td>
-				<td>Ha of course!</td>
-			</tr>
-		</table> -->
 	</div>
 </div>

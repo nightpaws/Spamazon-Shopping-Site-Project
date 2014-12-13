@@ -8,6 +8,17 @@
 <?php
 	//Check if the user is logged in
 	@include('php/logged-in.php');
+
+	include('databaseFunct/databaseconnection.php');
+	$id = $_GET["id"];
+	$result = mysql_query("SELECT * from cs312_order WHERE Id = $id");
+	while($row = mysql_fetch_array($result)){
+		$date = $row{"date"};
+		$street = $row{"street"};
+		$town = $row{"town"};
+		$county= $row{"county"};
+		$postcode = $row{"postcode"};
+	}
 ?>
 
 
@@ -29,12 +40,10 @@
 		</div>
 		<div id="address">
 			<h3>Delivery address</h3>
-			<p>Their address here in all its shittyness</p>
-		</div>
-		<div id="payment">
-			<h3>Payment</h3>
-			<p>Payment successfully payed on the 11/11/2011, from the card ending in 4672.</p>
-			<p>You can view payment details in <a href="account-man.php">account management</a>.</p>
+			<p><?php echo $street;?></p>
+			<p><?php echo $town;?></p>
+			<p><?php echo $county;?></p>
+			<p><?php echo $postcode;?></p>
 		</div>
 	</article>
 	<footer>

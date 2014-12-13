@@ -12,7 +12,8 @@
 		<div class="product-info">
 			<hgroup>
 				<h1><?php echo $name;?></h1>
-				<!-- <h4>By Product Maker</h4> -->
+				<?php $formattedCat = str_replace("-", " ", $category); ?>
+				<?php echo "<h4>Category: <a href=\"category.php?cat=$category\">$formattedCat</a></h4>";?>
 			</hgroup>
 			<h2><?php echo "£".$price;?></h2>
 		</div>

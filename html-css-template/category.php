@@ -36,7 +36,7 @@
 		$result = mysql_query("
 				SELECT DISTINCT name, price, image
 				FROM cs312_stock
-				WHERE category = " .$category .";
+				WHERE category = '$category';
 			");
 	}else{
 		$result = "Invalid category";

@@ -20,8 +20,16 @@
 		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article>
-		<?php include('page-elements/checkout/address.php') ?>
-		<?php include('page-elements/checkout/card.php') ?>
+	<h1 class="page-header">Order Details</h1>
+		<div class="reg">
+			<form name="order" action="databaseFunct/purchase.php" method="post">
+				<h2 class="page-header">Address Details</h1>
+				<?php include('page-elements/checkout/address.php') ?>
+				<h2 class="page-header">Card Details</h1>
+				<?php include('page-elements/checkout/card.php') ?>
+				<button type="submit" name="order">Place Order</button>
+			</form>
+		</div>
 	</article>
 	<footer>
 		<?php include('page-elements/footer.php'); ?>

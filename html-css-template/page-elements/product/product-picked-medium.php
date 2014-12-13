@@ -26,6 +26,12 @@
 					<?php echo "<li id=\"quantity\">$quantity</li>";?>
 				</ul>
 			</li>
+			<li>
+				<ul id="child-list">
+					<li>Remove:</li>
+					<?php echo "<a class=\"a-button\" id=\"remove\" href=\"removeFromCart.php?item=$name\">Remove</a>";?>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </div>

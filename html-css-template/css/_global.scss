@@ -71,6 +71,7 @@ form {
 
 a.a-button{
 	height: 36px;
+	line-height: 36px;
 	width: 100%;
 	background: $blue;
 	@include transition-duration(0.2s);

@@ -24,6 +24,8 @@
 						<?php include('databaseFunct/buildcart.php');?>
 				</div>
 				<div class="to-checkout col s4">
+					<h3>Your total is</h3>
+					<?php echo "<h4>£$basketTotalPrice</h4>";?>
 					<a href="checkout.php" class="a-button">Checkout</a>
 				</div>
 			</div>

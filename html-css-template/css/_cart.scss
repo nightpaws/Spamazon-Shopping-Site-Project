@@ -7,6 +7,10 @@
 	.cart-item{
 		border-right: solid 1px $lightblue;
 		padding-top: 0.8rem;
+
+		p{
+			margin: auto;
+		}
 	}
 
 	.cart-item:first-of-type{
@@ -27,6 +31,9 @@
 	}
 
 	.to-checkout{
+		h4{
+			text-align: center;
+		}
 		.a-button{
 			width: 70%;
 			display: block;

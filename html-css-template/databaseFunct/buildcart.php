@@ -1,8 +1,11 @@
 <?php
 
 //do stuff to get user and retrieve data
-if(!isset($_SESSION)) {
-    echo "You have not added anything do your basket.";
+if(!isset($_SESSION['spamazncart'])){ ?>
+	<div class="cart-item">
+    	<p>You have not added anything do your basket.</p>
+    </div>
+    <?php
 } else {
 
 
@@ -41,7 +44,11 @@ if(!isset($_SESSION)) {
 				$price = $row["price"];
 				$basketTotalPrice += $price;
 
-				include('page-elements/product/product-picked-medium.php');
+				?>
+				<div class="cart-item">
+					<?php include('page-elements/product/product-picked-medium.php'); ?>
+				</div>
+				<?php
 			}
 		}
 	}

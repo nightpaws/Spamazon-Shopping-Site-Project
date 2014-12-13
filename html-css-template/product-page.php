@@ -20,17 +20,20 @@
 				<?php include('page-elements/product/product-large.php'); ?>
 			</div>
 			<div class="purchase col s3">
-				<?php //This section should be modified as needed ?>
-				<form action="addtoCart.php" method="post">
-					<ul class="size-select select">
-						<li>Select Size</li>
-						<?php include("databaseFunct/getSizes.php");?>
-					</ul>
-					</br></br></br>
-					<ul class="color-select select">
-						<li>Select Colour</li>
-						<li><?php include("databaseFunct/getColours.php");?></li>
-					</ul>
+				<form action="addToCart.php" method="post">
+					<?php echo "<input type='hidden' name='item' value='$item'>"; ?>
+					<div>
+						<ul class="size-select select">
+							<li>Select Size</li>
+							<?php include("databaseFunct/getSizes.php");?>
+						</ul>
+					</div>
+					<div>
+						<ul class="color-select select">
+							<li>Select Colour</li>
+							<li><?php include("databaseFunct/getColours.php");?></li>
+						</ul>
+					</div>
 					<ul>
 						<label for="quantity">Quantity</label>
 						<select name="quantity">
@@ -46,11 +49,7 @@
 							<option value="10">10</option>
 						</select>
 					</ul>
-					<?php
-					 echo "<a href='addToCart.php?item=$name' class='btn btn-primary'>";
-           echo "<span class='glyphicon glyphicon-shopping-cart'></span> Add to cart";
-           echo "</a>";
-					?>
+					<button type="submit">Add to Cart</button>
 				</form>
 			</div>
 		</div>

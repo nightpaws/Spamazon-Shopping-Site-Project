@@ -1,19 +1,18 @@
-.purchase:before{
-	float: left;
-	content: "";
-	display: block;
-	height: 500px;
-	width: 1px;
-	background: $lightblue;
-}
-
 .purchase{
 
 	float: left;
 	margin-top: 1rem;
+	border-left: 1px solid $lightblue;
+	height: 31.25rem;
 
 	form{
 		padding-left: 0.5rem;
+	}
+
+	div:after{
+		display: block;
+		content: "";
+		clear: both;
 	}
 
 	.select{
@@ -26,29 +25,23 @@
 		}
 
 		button{
-			display: inline-block;
+			display: block;
 			margin: 0.5rem 0.5rem;
 			float: left;
 			padding-left: 0.7rem;
 			padding-right: 0.7rem;
 			border: 1px solid $grey;
 			color: black;
+			background-color: white;
 		}
 
 		button:hover{
 			background-color: $lightblue;
 		}
 
-		.selected{
+		.selectedsize, .selectedcolour{
 			background-color: $blue;
 			color: white;
-		}
-	}
-
-	.size-select{
-
-		button{
-			background: white;
 		}
 	}
 
@@ -58,7 +51,8 @@
 	}
 
 	label{
-		padding-top: 1rem;
+		padding-top: 2.5rem;
+		font-size: 1.4rem;
 	}
 
 	select{
@@ -67,6 +61,7 @@
 	}
 
 	button[type="submit"]{
+		margin-top: 2.5rem;
 		display: block;
 		clear: both;
 		width: 10rem;

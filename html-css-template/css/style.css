@@ -748,47 +748,46 @@ h1 {
 /*******************************************************************************
 	Purchase Section
 *******************************************************************************/
-.purchase:before {
-  float: left;
-  content: "";
-  display: block;
-  height: 500px;
-  width: 1px;
-  background: #abd0f8; }
-
 .purchase {
   float: left;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border-left: 1px solid #abd0f8;
+  height: 31.25rem; }
   .purchase form {
     padding-left: 0.5rem; }
+  .purchase div:after {
+    display: block;
+    content: "";
+    clear: both; }
   .purchase .select {
     padding: 1rem 0 1.5rem 0; }
     .purchase .select li:first-of-type {
       font-size: 1.4rem; }
     .purchase .select button {
-      display: inline-block;
+      display: block;
       margin: 0.5rem 0.5rem;
       float: left;
       padding-left: 0.7rem;
       padding-right: 0.7rem;
       border: 1px solid #7b7b7b;
-      color: black; }
+      color: black;
+      background-color: white; }
     .purchase .select button:hover {
       background-color: #abd0f8; }
-    .purchase .select .selected {
+    .purchase .select .selectedsize, .purchase .select .selectedcolour {
       background-color: #4c9cf1;
       color: white; }
-  .purchase .size-select button {
-    background: white; }
   .purchase .color-select {
     padding-top: 2.5rem;
     display: block; }
   .purchase label {
-    padding-top: 1rem; }
+    padding-top: 2.5rem;
+    font-size: 1.4rem; }
   .purchase select {
     display: block;
     clear: both; }
   .purchase button[type="submit"] {
+    margin-top: 2.5rem;
     display: block;
     clear: both;
     width: 10rem;
@@ -941,6 +940,7 @@ h1 {
 	Product Large
 *******************************************************************************/
 .product-large {
+  height: 100%;
   padding: 1rem 0; }
   .product-large h1, .product-large h2, .product-large h3, .product-large h4 {
     text-align: left;
@@ -949,9 +949,8 @@ h1 {
     padding-left: 35%; }
   .product-large #img-slider {
     float: left;
-    height: 18.75rem;
-    width: 18.75rem;
-    background: red; }
+    height: 100%;
+    width: 18.75rem; }
   .product-large .product-info {
     float: left; }
     .product-large .product-info h2 {

@@ -1,7 +1,9 @@
+<script language="JavaScript" type="text/javascript" src="./js/ajaxprediction.js"></script>
 <img src="./img/logo.png" alt="Spamazon logo">
 		<form action="search.php" method="GET">
-			<input type="text" name="term" placeholder="Search"/>
-			<button type="submit">Search</button>
+			<input type="text"  id="txtSearch" name="txtSearch" alt="Search Criteria" onkeyup="searchSuggest();" name="term" placeholder="Search" autocomplete="off" />
+			<button type="submit"  id="btnSearch">Search</button>
+			<div id="search_suggest"></div>
 		</form>
 		<div id="nav">
 			<nav id="nav-menu" role="navigation">
@@ -53,11 +55,12 @@
 				</ul>
 			</nav>
 			<nav id="user-menu" role="navigation">
-				<?php if (!isset($_COOKIE['spamaznauth'])) {
-					 include('page-elements/header-logged-out.php');
-					} else {
-					 include('page-elements/header-logged-in.php');
-					}
-				?>
+				<?php
+if (!isset($_COOKIE['spamaznauth'])) {
+    include('page-elements/header-logged-out.php');
+} else {
+    include('page-elements/header-logged-in.php');
+}
+?>
 			</nav>
 		</div>

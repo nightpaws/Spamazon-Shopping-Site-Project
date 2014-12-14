@@ -1,8 +1,8 @@
 <?php
     include('databaseconnection.php');
 
-    $term = $_GET["term"];
-
+	$term = $_GET["txtSearch"];
+		
     if(isset($_GET["startat"])){
         $startat = $_GET["startat"];
     }else{

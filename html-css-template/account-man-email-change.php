@@ -20,7 +20,7 @@
 		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article id="account-man-email-change" class="l-content">
-		<form name="email-change" action="#" method="post">
+		<form name="email-change" action="databaseFunct/changeEmail.php" method="post" onsubmit="return newEmail()">
 				<h2>Change Email</h2>
 				<table>
 					<tr>
@@ -40,11 +40,11 @@
 						</td>
 					</tr>
 				</table>
-				<button type="submit" name="changeemail">Change Email</button>
+				<button type="submit" name="email-change">Change Email</button>
 			</form>
 	</article>
 	<footer>
-		<?php include('page-elements/footer.php'); ?>
 	</footer>
+	<script type="text/javascript" src="./js/emailValidation.js"></script>
 </body>
 </html>

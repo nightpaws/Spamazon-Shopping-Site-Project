@@ -25,7 +25,7 @@ include('page-elements/header.php');
       We're Sorry!
     </h1>
     <h2>
-      The account you're trying to register has already been used.
+      The email you're trying to register is already in use.
     </h2>
   <footer>
     <?php

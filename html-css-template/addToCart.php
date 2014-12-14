@@ -1,11 +1,5 @@
 <?php
   session_start();
-  // get the product and initialise variables
-  // $item = $_GET["item"];
-
-  echo "<pre>";
-  print_r($_POST);
-  echo "</pre>";
 
   $name = $_POST["item"];
   $colour = $_POST["colour"];
@@ -26,9 +20,6 @@
   and customers double clicking the add button to prevent it being added twice */
   array_push($_SESSION['spamazncart'], $item);
 
-  echo "<pre>";
-  print_r($_SESSION);
-  echo "</pre>";
   header("Location: product-page.php?item=$name");
 
 ?>

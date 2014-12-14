@@ -4,7 +4,13 @@
 	$page_title = $_GET["item"];	//What is displayed As the page title in the browser
 	$page_description = "Brief product description"; //The page description
 ?>
-
+<script>
+function addSuccess() {
+<!-- Temporary notification of successful adding to cart
+ -->
+    alert("Item has been added to the Cart!");
+}
+</script>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +55,7 @@
 							<option value="10">10</option>
 						</select>
 					</ul>
-					<button type="submit">Add to Cart</button>
+					<button type="submit" onclick="addSuccess();">Add to Cart</button>
 				</form>
 			</div>
 		</div>

@@ -51,7 +51,11 @@ if (mysql_num_rows($dupcheck) > 0) {
 
 //close the connection
 mysql_close($dbhandle);
-
+//now login user so it shows up in header etc.
+$cookieName = 'spamaznauth';
+setcookie($cookieName, $newEmailC, time() + (86400 * 30), "/");
+echo $_COOKIE[$cookieName];
+header("Location: ../index.php");
 
 
 ?>

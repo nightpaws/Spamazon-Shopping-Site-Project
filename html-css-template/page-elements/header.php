@@ -27,7 +27,7 @@
 							<li><a href="category.php?cat=womans-tops">Tops</a></li>
 							<li><a href="category.php?cat=womans-bottoms">Bottoms</a></li>
 							<li><a href="category.php?cat=womans-shoes">Shoes</a></li>
-							<li><a href="category.php?cat=womans-stuff">Other Stuff</a></li>
+							<li><a href="category.php?cat=womans-other">Other Stuff</a></li>
 						</ul>
 					</li>
 					<li>
@@ -36,7 +36,7 @@
 							<li><a href="category.php?cat=kids-tops">Top</a></li>
 							<li><a href="category.php?cat=kids-bottoms">Bottom</a></li>
 							<li><a href="category.php?cat=kids-shoes">Shoe</a></li>
-							<li><a href="category.php?cat=kids-other">Stuffs</a></li>
+							<li><a href="category.php?cat=kids-other">Other Stuff</a></li>
 						</ul>
 					</li>
 				</ul>

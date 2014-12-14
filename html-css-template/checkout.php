@@ -1,13 +1,19 @@
 <?php
-	//The land of variables
-	$page_type = "checkout";
-	$page_title = "Checkout";	//What is displayed as the page title in the browser
-	$page_description = "Checkout" //The page description
+	session_start();
+	if(!isset($_SESSION['spamazncart']) || count($_SESSION['spamazncart']) == 0){
+		header("Location: index.php");
+		die();
+	} else{
+		
 ?>
 
 <?php
 	//Check if the user is logged in
 	@include('php/logged-in.php');
+	//The land of variables
+		$page_type = "checkout";
+		$page_title = "Checkout";	//What is displayed as the page title in the browser
+		$page_description = "Checkout" //The page description
 ?>
 
 <!DOCTYPE html>
@@ -37,3 +43,5 @@
 	  <script type="text/javascript" src="./js/checkoutValidation.js"></script>
 </body>
 </html>
+
+<?php } ?>

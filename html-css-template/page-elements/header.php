@@ -56,11 +56,11 @@
 			</nav>
 			<nav id="user-menu" role="navigation">
 				<?php
-if (!isset($_COOKIE['spamaznauth'])) {
-    include('page-elements/header-logged-out.php');
-} else {
-    include('page-elements/header-logged-in.php');
-}
-?>
+					if (!isset($_COOKIE['spamaznauth'])) {
+					    include('page-elements/header-logged-out.php');
+					} else {
+					    include('page-elements/header-logged-in.php');
+					}
+					?>
 			</nav>
 		</div>

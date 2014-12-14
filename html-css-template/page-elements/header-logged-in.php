@@ -8,6 +8,8 @@ $email = $_COOKIE[$cookie_name];
 	<li>
 		<a href="account-man.php"><?php echo $email ?></a>
 		<ul>
+			<li><a href='account-man.php'>Account Management</a></li>
+			<li><a href="account-man.php#account-settings">Account Settings</a></li>
 			<li><a href='index.php?logout=true'>Log Out</a></li>
 		</ul>
 	</li>

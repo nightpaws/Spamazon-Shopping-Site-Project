@@ -1,0 +1,17 @@
+#search_suggest{
+	line-height: 1.4rem;
+	z-index: 5000;
+	position: absolute;
+	width: 302px;
+	background-color: white;
+
+	>div{
+		padding: 0.2rem 0.5rem;
+		border-left: 1px solid $grey;
+		border-right: 1px solid $grey;
+	}
+
+	>div:last-of-type{
+		border-bottom: 1px solid $grey;
+	}
+}

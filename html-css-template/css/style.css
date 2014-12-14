@@ -34,7 +34,8 @@ body {
 
 .home {
   float: left;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .pagination {
   margin-top: 2rem;
@@ -50,6 +51,9 @@ form label {
   height: 36px;
   width: 8rem;
   margin-right: 3rem; }
+form select {
+  height: 36px;
+  font-size: 20px; }
 form input {
   height: 32px;
   width: 300px;
@@ -241,7 +245,8 @@ header {
     color: white; }
   header img {
     margin: 10px 0 10px 5rem;
-    height: 60px; }
+    height: 60px;
+    float: left; }
   header form {
     float: right;
     margin: 22px 5rem; }
@@ -287,7 +292,6 @@ nav {
   nav > ul {
     margin: auto 0; }
     nav > ul > li {
-      height: 100%;
       float: left;
       padding: 1rem 0; }
     nav > ul > li:hover {
@@ -370,9 +374,26 @@ nav {
     display: block; }
   header nav:not(:target) > a:first-of-type, header nav:target > a:last-of-type {
     display: block; } }
+#search_suggest {
+  line-height: 1.4rem;
+  z-index: 5000;
+  position: absolute;
+  width: 302px;
+  background-color: white; }
+  #search_suggest > div {
+    padding: 0.2rem 0.5rem;
+    border-left: 1px solid #7b7b7b;
+    border-right: 1px solid #7b7b7b; }
+  #search_suggest > div:last-of-type {
+    border-bottom: 1px solid #7b7b7b; }
+
 /*******************************************************************************
 	Home pages
 *******************************************************************************/
+#slider {
+  width: 100%;
+  margin: auto; }
+
 .flexslider {
   height: 20rem;
   width: 101%;
@@ -760,6 +781,8 @@ h1 {
   height: 100%; }
   .purchase form {
     padding-left: 0.5rem; }
+    .purchase form select {
+      width: 8rem; }
   .purchase div:after {
     display: block;
     content: "";
@@ -781,7 +804,8 @@ h1 {
       background-color: #abd0f8; }
     .purchase .select .selectedsize, .purchase .select .selectedcolour {
       background-color: #4c9cf1;
-      color: white; }
+      color: white;
+      border: 0px solid white; }
   .purchase .color-select {
     padding-top: 2.5rem;
     display: block; }
@@ -959,7 +983,9 @@ h1 {
     text-align: left;
     margin: 0 0 0 1rem; }
   .product-large p {
-    padding-left: 35%; }
+    padding: 0 1rem; }
+  .product-large .group {
+    height: 100%; }
   .product-large #img-slider {
     float: left;
     height: 100%;

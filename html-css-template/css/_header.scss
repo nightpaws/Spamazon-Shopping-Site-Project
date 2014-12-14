@@ -17,6 +17,7 @@ header{
 	img{
 		margin: 10px 0 10px 5rem;
 		height: 60px;
+		float: left;
 	}
 
 	form{
@@ -59,3 +60,5 @@ header{
 }
 
 @import "_nav.scss";
+
+@import "_searchsuggest.scss";

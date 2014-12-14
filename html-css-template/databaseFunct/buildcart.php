@@ -1,9 +1,9 @@
 <?php
 
 //do stuff to get user and retrieve data
-if(!isset($_SESSION['spamazncart'])){ ?>
+if(!isset($_SESSION['spamazncart']) || count($_SESSION['spamazncart'] == 0)){ ?>
 	<div class="cart-item">
-    	<p>You have not added anything do your basket.</p>
+    	<p>You have not added anything to your basket.</p>
     </div>
     <?php
 } else {

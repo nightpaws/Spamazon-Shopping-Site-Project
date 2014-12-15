@@ -30,6 +30,6 @@ if ($databasePass != $currPass) {
   if(! $retval ){
     die('Could not update data: ' . mysql_error());
   }
-  header("Location: ../index.php");
+  header("Location: ../account-man.php");
 }
 ?>

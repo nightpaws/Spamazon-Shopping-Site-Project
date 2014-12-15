@@ -55,7 +55,7 @@ mysql_close($dbhandle);
 $cookieName = 'spamaznauth';
 setcookie($cookieName, $newEmailC, time() + (86400 * 30), "/");
 echo $_COOKIE[$cookieName];
-header("Location: ../index.php");
+header("Location: ../account-man.php");
 
 
 ?>

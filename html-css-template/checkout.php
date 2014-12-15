@@ -28,11 +28,11 @@
 	<article>
 	<h1 class="page-header">Order Details</h1>
 		<div class="reg">
-			<form name="order" action="databaseFunct/purchase.php" method="post" onsubmit="return checkoutValidation()">
+			<form name="order" action="databaseFunct/purchase.php" method="post">
 				<h2 class="page-header">Address Details</h1>
 				<?php include('page-elements/checkout/address.php') ?>
-				<h2 class="page-header">Card Details</h1>
-				<?php include('page-elements/checkout/card.php') ?>
+				<h2 class="page-header">Card Details | <a href="addCard.php">Add New Card </a></h1>
+					<?php include('databaseFunct/getCards.php'); ?>
 				<button type="submit" name="order">Place Order</button>
 			</form>
 		</div>

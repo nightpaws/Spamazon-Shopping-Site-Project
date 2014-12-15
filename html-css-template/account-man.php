@@ -46,7 +46,7 @@
 				</div>
 			</div>
 			<div class="col s6">
-				<h3>Payment Details</h3>
+				<h3>Payment Details | <a href="addCard.php?acc=true">Add Card</a></h3>
 				<?php include('databaseFunct/payment-methods.php') ?>
 			</div>
 		</div>

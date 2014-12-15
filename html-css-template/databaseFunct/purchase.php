@@ -15,7 +15,6 @@
 	$month = $_POST['month'];
 	$year = $_POST['year'];
 
-	$cardQuery = mysql_query("INSERT INTO `cs312_payment`(`cs312_useremail`, `cardNo`, `cardName`, `sortcode`, `securityNo`, `expiryMonth`, `expiryYear`) VALUES ('$email',$cardNo,'$cardName',$sortCode,$securityNo,$month,$year)");
 	$orderQuery = mysql_query("INSERT INTO `cs312_order`(`Id`, `cs312_useremail`, `date`, `street`, `town`, `county`, `postcode`) VALUES (NULL,'$email',CURDATE(),'$street','$town','$county','$postcode')");
 
 	if(count($_SESSION['spamazncart'])>0){

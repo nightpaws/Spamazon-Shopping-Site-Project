@@ -25,7 +25,7 @@
 			?>
 
 			<div class="details">
-				<a href="order-page.php">Modify card ending in <?php echo $endOfCard; ?></a>
+				<?php echo "<a href=\"databaseFunct/remove-card.php?card=$endOfCard\">Remove card ending in $endOfCard</a>"; ?>
 			</div>
 
 <?php	endwhile;

@@ -65,9 +65,11 @@
 				</li>
 				<li>
 					<h3>Stewart Key</h3>
-					<p>User input validation, user login, and session storage</p>
+					<p>User input validation, user login(cookies/server validation), and changing email/password. </br>
+					 	 Initial basket system and linking with product page through session storage</p>
 					<ul>
 						<li><a class="github" href="https://github.com/Epailes">GitHub: Epailes</a></li>
+						<li><a class="linkedin" href="uk.linkedin.com/pub/stewart-key/a5/3a2/751">LinkedIn</a></li>
 					</ul>
 
 				</li>

@@ -1,4 +1,4 @@
-CS312 - Webstore
+Spamazon Shopping Site Project
 =========
 ##
 ###Description##
@@ -14,7 +14,7 @@ Craig Morrison		- hwb12179@uni.strath.ac.uk
 
 Thomas Maxwell		- gvb12182@uni.strath.ac.uk
 
-Stewart Key			- ypb12171@uni.strath.ac.uk (stewart.key.2013@uni.strath.ac.uk)
+Stewart Key			- ypb12171@uni.strath.ac.uk
 
 Aidan O'Grady		- wlb12153@uni.strath.ac.uk
 

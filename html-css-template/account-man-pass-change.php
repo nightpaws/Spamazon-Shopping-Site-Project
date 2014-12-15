@@ -20,7 +20,7 @@
 		<?php include('page-elements/header.php'); ?>
 	</header>
 	<article id="account-man-pass-change" class="l-content">
-		<form name="pass-change" action="#" method="post">
+		<form name="pass-change" action="databaseFunct/changePass.php" method="post" onsubmit="return newPassword()">
 				<h2>Change Password</h2>
 				<table>
 					<tr>
@@ -48,11 +48,12 @@
 						</td>
 					</tr>
 				</table>
-				<button type="submit" name="changepass">Change Password</button>
+				<button type="submit" name="pass-change">Change Password</button>
 			</form>
 	</article>
 	<footer>
 		<?php include('page-elements/footer.php'); ?>
 	</footer>
+	<script type="text/javascript" src="./js/changeDetailsValidation.js"></script>
 </body>
 </html>

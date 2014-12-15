@@ -45,6 +45,6 @@
 	</article>
 	<footer>
 	</footer>
-	<script type="text/javascript" src="./js/emailValidation.js"></script>
+	<script type="text/javascript" src="./js/changeDetailsValidation.js"></script>
 </body>
 </html>
